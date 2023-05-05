@@ -1,0 +1,46 @@
+﻿@inject NavigationManager NavigationManager
+@inject ILocalStorageService localStorage
+@inject AuthenticationStateProvider AuthStateProvider
+<div>
+<AuthorizeView>
+    <Authorized>
+            <div class="cusdesign">
+        <CustomBtn btnType="button" cssClass="cusBtn cusBtn4 text-white" OnClick="Logout" text="Log out" />
+            </div>
+    </Authorized>
+    <NotAuthorized>
+            <div class="customdesign d-flex align-items-center gap-4">
+        <CustomBtn btnType="button" cssClass="cusBtn cusBtn2 text-white" OnClick="Login" text="Login" />
+        <CustomBtn btnType="button" cssClass="cusBtn cusBtn5 text-white" OnClick="Register" text="Registered User" />
+            </div>
+    </NotAuthorized>
+</AuthorizeView>
+</div>
+<style>
+    .cusdesign{
+       
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
+    .customdesign{
+       
+    }
+</style>
+@code {
+    public void Login()
+    {
+        NavigationManager.NavigateTo("/login");
+    }
+    public void Register()
+    {
+        NavigationManager.NavigateTo("/signup");
+    }
+    public async void Logout()
+    {
+
+        await localStorage.RemoveItemAsync("token");
+        await AuthStateProvider.GetAuthenticationStateAsync();
+    }
+}

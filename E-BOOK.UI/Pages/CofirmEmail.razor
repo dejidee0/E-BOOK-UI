@@ -1,0 +1,21 @@
+﻿@page "/confirm_email"
+@layout EmptyLayout
+<div class="d-flex flex-column justify-content-center align-items-center hfull">
+    <div class="shadow cusPadd d-flex flex-column gap-4 align-items-center @successpage">
+        <img src="images/congrat.jpg" alt="congrat-img" />
+        <h1>Congratulation</h1>
+        <p>Your email is successfully confirmed</p>
+    </div>
+    <div class="shadow cusPadd d-flex flex-column gap-4 align-items-center  @errorpage">
+        <img src="images/congrat.jpg" alt="congrat-img" />
+        <h1>Sorry</h1>
+        <p>Your email is not successfully confirmed</p>
+        <p></p>
+    </div>
+</div>
+<style>
+    
+    .cusPadd{
+        padding:3rem;
+    }
+</style>

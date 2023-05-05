@@ -1,0 +1,14 @@
+﻿<a href=@path><button type="@btnType" class=@cssClass @onclick="OnClick">@text</button></a>
+@code{
+    [Parameter]
+    public string path { get; set; }
+    [Parameter]
+    public string text  { get; set; }
+    [Parameter]
+    public string cssClass { get; set; }
+    [Parameter]
+    public string btnType { get; set; }
+    [Parameter]
+    public Action OnClick { get; set; }
+    
+}

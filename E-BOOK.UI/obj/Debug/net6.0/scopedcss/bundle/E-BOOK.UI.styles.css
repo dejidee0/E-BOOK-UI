@@ -1,0 +1,179 @@
+/* _content/E-BOOK.UI/Pages/SingleBook.razor.rz.scp.css */
+.body[b-6ijoeokxk5] {
+    height: 400px;
+    width: 80%;
+    padding: 15px 15px;
+    display: flex;
+    gap: 30px;
+}
+
+.bookproperties[b-6ijoeokxk5] {
+    height: 200px;
+    width: 40%;
+}
+
+.cusgap[b-6ijoeokxk5] {
+    gap: 0.5px;
+}
+/* _content/E-BOOK.UI/Shared/CustomBtn.razor.rz.scp.css */
+.cusBtn[b-08l1jhrqsd] {
+    border: none;
+    outline: none;
+    padding: 5px 40px;
+    border-radius: 12px;
+}
+
+.cusBtn2[b-08l1jhrqsd] {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    box-shadow: 0px 5px 15px -2px rgba(101,101,235,0.36);
+    -webkit-box-shadow: 0px 5px 15px -2px rgba(101,101,235,0.36);
+    -moz-box-shadow: 0px 5px 15px -2px rgba(101,101,235,0.36);
+}
+
+.cusBtn3[b-08l1jhrqsd] {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,120,9,1) 35%, rgba(255,252,0,1) 100%);
+}
+
+.cusBtn4[b-08l1jhrqsd] {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,9,1) 35%, rgba(255,85,0,1) 100%);
+}
+.cusBtn5[b-08l1jhrqsd] {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,31,1) 35%, rgba(14,255,0,1) 100%);
+}
+/* _content/E-BOOK.UI/Shared/MainLayout.razor.rz.scp.css */
+.page[b-pokeh6kjmj] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-pokeh6kjmj] {
+    flex: 1;
+}
+
+.sidebar[b-pokeh6kjmj] {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+.top-row[b-pokeh6kjmj] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-pokeh6kjmj]  a, .top-row .btn-link[b-pokeh6kjmj] {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+    }
+
+    .top-row a:first-child[b-pokeh6kjmj] {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth)[b-pokeh6kjmj] {
+        display: none;
+    }
+
+    .top-row.auth[b-pokeh6kjmj] {
+        justify-content: space-between;
+    }
+
+    .top-row a[b-pokeh6kjmj], .top-row .btn-link[b-pokeh6kjmj] {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-pokeh6kjmj] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-pokeh6kjmj] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-pokeh6kjmj] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row[b-pokeh6kjmj], article[b-pokeh6kjmj] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+/* _content/E-BOOK.UI/Shared/NavMenu.razor.rz.scp.css */
+.navbar-toggler[b-p97t2sxjqt] {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-row[b-p97t2sxjqt] {
+    height: 3.5rem;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.navbar-brand[b-p97t2sxjqt] {
+    font-size: 1.1rem;
+}
+
+.oi[b-p97t2sxjqt] {
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    top: -2px;
+}
+
+.nav-item[b-p97t2sxjqt] {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+    .nav-item:first-of-type[b-p97t2sxjqt] {
+        padding-top: 1rem;
+    }
+
+    .nav-item:last-of-type[b-p97t2sxjqt] {
+        padding-bottom: 1rem;
+    }
+
+    .nav-item[b-p97t2sxjqt]  a {
+        color: #d7d7d7;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+.nav-item[b-p97t2sxjqt]  a.active {
+    background-color: rgba(255,255,255,0.25);
+    color: white;
+}
+
+.nav-item[b-p97t2sxjqt]  a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+@media (min-width: 641px) {
+    .navbar-toggler[b-p97t2sxjqt] {
+        display: none;
+    }
+
+    .collapse[b-p97t2sxjqt] {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+}

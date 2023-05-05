@@ -1,0 +1,16 @@
+﻿.body {
+    height: 400px;
+    width: 80%;
+    padding: 15px 15px;
+    display: flex;
+    gap: 30px;
+}
+
+.bookproperties {
+    height: 200px;
+    width: 40%;
+}
+
+.cusgap {
+    gap: 0.5px;
+}

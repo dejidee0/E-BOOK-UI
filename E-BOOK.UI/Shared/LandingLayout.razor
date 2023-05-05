@@ -1,0 +1,116 @@
+﻿@inherits LayoutComponentBase
+<header class="d-flex flex-column align-items-center gap-4">
+    <div class="d-flex justify-content-between align-items-center wid-iner">
+        <h3>Logo</h3>
+        <div class="d-flex align-items-center gap-4">
+            <AuthBtn/>
+            <p>Favorites</p>
+        </div>
+    </div>
+    <div class="d-flex gap-2 align-items-center">
+        <p>Wish to Search</p>
+        <button class="cusBtn2 cusBtn">
+            <input type="radio"/>
+            Author
+        </button>
+        <p>or</p>
+        <button class="cusBtn3 cusBtn">
+            <input type="radio"/>
+            Title
+        </button>
+        <p>Only available copies will be display</p>
+    </div>
+    <div class="w-50 searba">
+        <div class="input-group">
+            <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+            <button type="button" class="btn btn-col">Search</button>
+        </div>
+    </div>
+</header>
+<main>
+        @Body
+</main>
+<footer class="d-flex flex-column gap-4 align-items-center">
+    
+    <div class="d-flex customgap align-items-center">
+        <div class="d-flex gap-4">
+       <a href="#">About us</a>
+       <a href="#">Contact us</a>
+        </div>
+            <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+    </div>
+    <div class="text-center lasfoot bgcol w-100">
+        <p>&copy; 1996-2023. Amazon.com inc or its affliates. All Rights Reserved.</p>
+    </div>
+</footer>
+<style>
+    .lasfoot{
+        padding-block: 1rem;
+    }
+    .bgcol{
+        background: #F5F5F5;
+        color:black;
+    }
+    a{
+        text-decoration: none;
+       color:black
+    }
+    .customgap{
+        gap: 4rem;
+    }
+    ul{
+        display: flex;
+        gap: 1rem;
+    }
+    li{
+        list-style: none
+    }
+    li a{
+            padding: .8rem;
+            border-radius: 50%;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+    }
+    .btn-col{
+        background:black;
+        color: white
+    }
+    .wid-iner{
+        width: 90%;
+    }
+    .cusBtn {
+        border: none;
+        outline: none;
+        border-radius: 12px;
+    }
+    .cusBtn2 {
+   
+        border: 1px solid blue;
+        color: black
+    }
+
+    .cusBtn3 {
+        color:black;
+        border: 1px solid green;
+    }
+    header{
+        width:100vw;
+        border-bottom: 2px solid black;
+        position:relative;
+        padding-top:30px;
+        padding-bottom: 60px;   
+    }
+    main{
+        width: 100vw;
+    }
+    .searba{
+        position: absolute;
+        bottom:-20px;
+
+    }
+</style>

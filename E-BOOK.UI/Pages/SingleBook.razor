@@ -1,0 +1,65 @@
+﻿@page "/singlebook/{id}"
+@layout LandingLayout
+
+@if (Book == null && Response == null)
+        {
+    <div class="spinner"></div>
+}
+else
+{
+ <section class="padded">
+        <h3>DisplayBook</h3>
+        <p>Show <span style="font-weight:bold; font-size:1.2rem">1</span> result for <span style="font-weight:bold; font-size:1.2rem">Book Title</span></p>
+        <div class="body">
+            <div class="img-fluid">
+                <img src="@Book.BookImg" class="img-thumbnail" alt="Book Image">
+            </div>
+
+            <div class="d-flex flex-column cusgap">
+                <p>Book Title</p>
+                <p>
+                    Available Copies: <span style="font-weight:bold; font-size:1.2rem">15</span>
+                    Copies in Library: <span style="font-weight:bold; font-size:1.2rem">15</span>
+                    Copies taken-out: <span style="font-weight:bold; font-size:1.2rem">15</span>
+                </p>
+                @*<BookInfo info="Genre" details="@Book"/>*@
+                <BookInfo info="Author" details="@Book.Author" />
+                <BookInfo info="Title" details="@Book.Title" />
+                <BookInfo info="Publisher" details="@Book.Publisher" />
+                <BookInfo info="Publisher Date" details="@Book.PublisherDate.ToShortDateString()" />
+                <BookInfo info="Added to Library" details="@Book.AddedToLib.ToShortDateString()" />
+                <BookInfo info="ISBN" details="@Book.ISBN" />
+                <BookInfo info="Pages" details="@Book.NoPage.ToString()" />
+                <div class="d-flex">
+                    <p>Description:  </p>
+                    <div class="d-flex flex-column cusgap">
+                        <p>
+                            @Book.Description
+                        </p>
+                        <div class="d-flex">
+                            <p> &copy; version <span style="font-weight:bold; font-size:1.2rem">YES</span></p>
+                            <p>
+                                <button type="button" class="btn btn-primary">Read Now</button>
+                                <button type="button" class="btn btn-outline-primary">Download</button>
+                            </p>
+                        </div>
+                        <p>Reviews</p>
+                        <div class="d-flex flex-column cusgap">
+                            @foreach (var review in Response.Data)
+                            {
+                                <UserReview Name="@review.AppUserId" Comment="@review.Comment" />
+                            }
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+ </section>
+ <style>
+        .padded{
+            padding-block: 4rem;
+            margin-bottom: 6rem;
+        }
+ </style>
+}

@@ -1,0 +1,31 @@
+﻿@page "/reset-password"
+@layout EmptyLayout
+<div class="d-flex flex-column justify-content-center align-items-center hfull">
+    <h3 class="text-center">Login</h3>
+
+    <EditForm Model="passwordReset" OnSubmit="HandleReset" class="w-50">
+        <div class="shadow p-4 d-flex flex-column gap-4">
+            <div class="d-flex gap-2 flex-column gap-2">
+                <label for="username">Email</label>
+                <InputText id="username" @bind-Value="passwordReset.Email" />
+            </div>
+            <div class="d-flex gap-2 flex-column">
+                <label for="pass">Token</label>
+                <InputText id="pass" @bind-Value="passwordReset.Token" />
+            </div>
+            <div class="d-flex gap-2 flex-column">
+                <label for="pass">Password</label>
+                <InputText id="pass" @bind-Value="passwordReset.Password" />
+            </div>
+            <div class="d-flex gap-2 flex-column">
+                <label for="passC">Confirm Password</label>
+                <InputText id="passC" @bind-Value="passwordReset.ConfirmPassword" />
+            </div>
+            <CustomBtn btnType="submit" cssClass="cusBtn cusBtn5 text-white" text="Reset Password" />
+            <div class="d-flex justify-content-between">
+                <a href="/signup">Don't have an account</a>
+                <a href="/forgotpassword">Forgot password?</a>
+            </div>
+        </div>
+    </EditForm>
+</div>

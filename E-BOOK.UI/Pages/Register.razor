@@ -1,0 +1,66 @@
+﻿@page "/signup"
+@layout EmptyLayout
+
+<div class="d-flex flex-column justify-content-center align-items-center hfull">
+    <h3 class="text-center">Register an Account</h3>
+
+    <EditForm Model="user" OnValidSubmit="HandleRegister" class="w-50">
+        <DataAnnotationsValidator/>
+        @*<ValidationSummary/>*@
+        <div class="shadow p-4 d-flex flex-column gap-4">
+            <div class="d-flex gap-4">
+                <div class="d-flex gap-2 flex-column gap-2">
+                    <label for="fname">First Name</label>
+                    <InputText id="fname" @bind-Value="user.FirstName" />
+                    <ValidationMessage For="()=>user.FirstName"/>
+                </div>
+                <div class="d-flex gap-2 flex-column gap-2">
+                    <label for="lname">Last Name</label>
+                    <InputText id="username" @bind-Value="user.LastName" />
+                    <ValidationMessage For="()=>user.LastName" />
+                </div>
+            </div>
+            <div class="d-flex gap-2 flex-column">
+                <label for="gender">Gender</label>
+                <InputSelect id="gender" @bind-Value='@user.Gender'>
+                    @foreach (var gender in Enum.GetValues(typeof(Gender)))
+                    {
+                        <option value="@gender">@gender</option>
+                    }
+             
+                </InputSelect>
+                
+            </div>
+            <div class="d-flex gap-4">
+                <div class="d-flex gap-2 flex-column gap-2">
+                    <label for="phone">Phone Number</label>
+                    <InputText id="phone" @bind-Value="user.PhoneNumber" />
+                    <ValidationMessage For="()=>user.PhoneNumber" />
+                </div>
+                <div class="d-flex gap-2 flex-column gap-2">
+                    <label for="email">Email</label>
+                    <InputText id="email" @bind-Value="user.Email" />
+                    <ValidationMessage For="()=>user.Email" />
+                </div>
+            </div>
+            <div class="d-flex gap-4">
+            <div class="d-flex gap-2 flex-column">
+                <label for="pass">Password</label>
+                
+                <InputText id="pass" @bind-Value="user.Password" />
+                    <ValidationMessage For="()=>user.Password" />
+            </div>
+            <div class="d-flex gap-2 flex-column">
+                <label for="Cpass">Confirm Password</label>
+                <InputText id="Cpass" @bind-Value="user.ConfirmPassword" />
+                    <ValidationMessage For="()=>user.ConfirmPassword" />
+            </div>
+            </div>
+            <CustomBtn btnType="submit" cssClass="cusBtn cusBtn5 text-white" text="Create Account" />
+            <div class="d-flex justify-content-between">
+                <a href="/login">login to an account</a>
+                <a href="/forgotpassword">Forgot password?</a>
+            </div>
+        </div>
+    </EditForm>
+</div>

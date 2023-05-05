@@ -1,0 +1,137 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\bsahe\\source\\repos\\updateGroupb\\E-BOOK-LIBRARY(GROUPB)\\E-BOOK.UI\\E-BOOK.UI.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\bsahe\\source\\repos\\updateGroupb\\E-BOOK-LIBRARY(GROUPB)\\E-BOOK.UI\\E-BOOK.UI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\bsahe\\source\\repos\\updateGroupb\\E-BOOK-LIBRARY(GROUPB)\\E-BOOK.UI\\E-BOOK.UI.csproj",
+        "projectName": "E-BOOK.UI",
+        "projectPath": "C:\\Users\\bsahe\\source\\repos\\updateGroupb\\E-BOOK-LIBRARY(GROUPB)\\E-BOOK.UI\\E-BOOK.UI.csproj",
+        "packagesPath": "C:\\Users\\bsahe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bsahe\\source\\repos\\updateGroupb\\E-BOOK-LIBRARY(GROUPB)\\E-BOOK.UI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\bsahe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\bsahe\\source\\repos\\updateGroupb\\E-BOOK-LIBRARY(GROUPB)\\MODEL\\MODEL.csproj": {
+                "projectPath": "C:\\Users\\bsahe\\source\\repos\\updateGroupb\\E-BOOK-LIBRARY(GROUPB)\\MODEL\\MODEL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Blazored.LocalStorage": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\bsahe\\source\\repos\\updateGroupb\\E-BOOK-LIBRARY(GROUPB)\\MODEL\\MODEL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\bsahe\\source\\repos\\updateGroupb\\E-BOOK-LIBRARY(GROUPB)\\MODEL\\MODEL.csproj",
+        "projectName": "MODEL",
+        "projectPath": "C:\\Users\\bsahe\\source\\repos\\updateGroupb\\E-BOOK-LIBRARY(GROUPB)\\MODEL\\MODEL.csproj",
+        "packagesPath": "C:\\Users\\bsahe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bsahe\\source\\repos\\updateGroupb\\E-BOOK-LIBRARY(GROUPB)\\MODEL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\bsahe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

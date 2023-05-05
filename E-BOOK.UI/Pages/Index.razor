@@ -1,0 +1,160 @@
+﻿@page "/"
+@layout LandingLayout
+<PageTitle>Index</PageTitle>
+<section class="crump">
+    <div class="iner-w">
+        <div class="fic w-small">
+        <h6>Fictional Book</h6>
+        <div class="sub-fic">
+            <SimpleBtn title="Drama"/>
+            <SimpleBtn title="Mystery" />
+            <SimpleBtn title="Sci-fi" />
+            <SimpleBtn title="Sci-fi" />
+        </div>
+    </div>
+        <div class="fic w-small">
+            <h6>Non-Fictional Book</h6>
+            <div class="sub-fic">
+                <SimpleBtn title="Drama" />
+                <SimpleBtn title="Mystery" />
+                <SimpleBtn title="Sci-fi" />
+                <SimpleBtn title="Sci-fi" />
+            </div>
+        </div>
+        <div class="fic w-sample">
+            <h6>CD Games</h6>
+            <div class="sub-fic">
+                <SimpleBtn title="Drama" />
+                <SimpleBtn title="Mystery" />
+                <SimpleBtn title="Sci-fi" />
+                <SimpleBtn title="Sci-fi" />
+                <SimpleBtn title="Mystery" />
+                <SimpleBtn title="Sci-fi" />
+                <SimpleBtn title="Sci-fi" />
+            </div>
+        </div>
+    </div>
+    
+</section>
+<section class="container-width">
+    <div class="slider-section">
+        @if (_Book1 == null && _Book2 == null)
+        {
+            <div class="spinner"></div>
+        }else{
+            <h5>Recent Book</h5>
+            <div class="inner-flex">
+                <i class="fa fa-chevron-circle-left size icon1" aria-hidden="true" @onclick ="HandlePrev1" ></i>
+
+                @foreach (var book in _Book3.Books)
+                {
+                    <BookCard Author=@book.Author BookImg=@(book.BookImg == null?"/images/noBook.jpg":book.BookImg) Ratings=3 Title=@book.Title bookUrl=@($"/singlebook/{book.Id}") />
+                }
+                <i class="fa fa-chevron-circle-right size icon2" aria-hidden="true" @onclick="HandleNext1"></i>
+
+            </div>
+            <div class="inner-flex">
+                <i class="fa fa-chevron-circle-left size icon1" aria-hidden="true" ></i>
+                @foreach (var book in _Book4.Books)
+                {
+                    <BookCard Author=@book.Author BookImg=@(book.BookImg.Length <1?"/images/noBook.jpg":book.BookImg) Ratings=3 Title=@book.Title bookUrl=@($"/singlebook/{book.Id}") />
+                }
+                <i class="fa fa-chevron-circle-right size icon2" aria-hidden="true"></i>
+            </div>
+            <h5>Most Popular</h5>
+            <div class="inner-flex">
+                <i class="fa fa-chevron-circle-left size icon1"  aria-hidden="true"></i>
+             
+            @foreach(var book in _Book1.Books)
+            {
+                    <BookCard Author=@book.Author BookImg=@(book.BookImg == null?"/images/noBook.jpg":book.BookImg) Ratings=3 Title=@book.Title bookUrl=@($"/singlebook/{book.Id}") />
+            }
+                <i class="fa fa-chevron-circle-right size icon2" aria-hidden="true"></i>
+           
+            </div>
+            <div class="inner-flex">
+                <i class="fa fa-chevron-circle-left size icon1" aria-hidden="true"></i>
+                @foreach (var book in _Book2.Books)
+                {
+                    <BookCard Author=@book.Author BookImg=@(book.BookImg.Length <1?"/images/noBook.jpg":book.BookImg) Ratings=3 Title=@book.Title bookUrl=@($"/singlebook/{book.Id}") />
+                }
+                <i class="fa fa-chevron-circle-right size icon2" aria-hidden="true"></i>
+            </div>
+        }
+        
+    </div>
+</section>
+
+
+<style>
+    .inner-flex{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+       gap: 20px;
+       justify-content:space-between;
+       position:relative;
+
+    }
+
+    .size {
+        font-size: 2.5rem;
+      
+        
+    }
+    .icon2{
+        position: absolute;
+        right:0;
+    }
+
+    .icon1 {
+        position: absolute;
+    }
+    .slider-section{
+        display:flex;
+        flex-direction:column
+        
+    }
+    .container-width{
+        width:90%;
+        margin: 0 auto;
+        padding-block: 2rem;
+    }
+    .w-sample{
+       width: 40%;
+    }
+
+    .w-small{
+        width: 15%;
+    }
+    .crump{
+        background-image:url("/images/lib.jpg");
+        padding-block:3rem;
+        background-color: rgba(255, 255, 255, 0.9);
+    background-blend-mode: lighten;
+    display:flex;
+    justify-content:center;
+
+
+    }
+
+    .iner-w{
+        display: flex;
+        justify-content:space-between;
+        gap:1.5rem;
+        width: 80%;
+    }
+    .fic{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        gap: 8px;
+        align-items:center;
+    }
+    .sub-fic{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+</style>
