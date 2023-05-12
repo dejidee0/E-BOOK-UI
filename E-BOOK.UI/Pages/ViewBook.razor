@@ -1,0 +1,35 @@
+﻿@page "/admin-dashboard/book/{id}"
+@attribute [Authorize(Roles = "ADMIN")]
+@if (_book == null)
+{
+    <div class="spinner"></div>
+}
+else
+{
+    <section class="flex-cus">
+        <div class="d-flex gap-4 flex-column align-items-center">
+            <img src="@_book.BookImg" alt="BookImg" />
+            <CustomBtn path=@($"/update_photo/book/{_book.Id}") btnType="button" cssClass="cusBtn cusBtn5 text-white" text="Upload Image" />
+        </div>
+        <div class="d-flex flex-column shadow-sm p-5 rounded-3 cusgap">
+            <div class="d-flex flex-column g-lg-2">
+                <Details Title="Book Title" Des="@_book.Title.ToUpper()" />
+                <Details Title="Author" Des="@_book.Author.ToUpper()" />
+                <Details Title="No of Pages" Des="@_book.NoPage.ToString()" />
+                <Details Title="Publisher" Des="@_book.Publisher.ToUpper()" />
+                <Details Title="Published Date" Des="@_book.PublisherDate.ToShortDateString().ToUpper()" />
+                <Details Title="ISBN" Des="@_book.ISBN.ToUpper()" />
+                <Details Title="Added to Library" Des="@_book.AddedToLib.ToShortDateString().ToUpper()" />
+            </div>
+            <div class="d-flex gap-4">
+                <CustomBtn path="/admin-dashboard/book" cssClass="cusBtn cusBtn2 text-white" text="Back" />
+                <CustomBtn path=@($"/admin-dashboard/user/edit_book/{Id}") cssClass="cusBtn cusBtn3 text-white" text="Edit" />
+
+                <CustomBtn cssClass="cusBtn cusBtn4 text-white" text="Delete" btnType="button" OnClick="@DeleteContact" />
+
+            </div>
+        </div>
+    </section>
+    <ConfirmDelete ConfirmationMessage=@($"Are you sure you want to delete {_book.Title}?")
+               ConfirmationTitle="Confirm Delete" ConfirmationChanged="ConfirmDelete_CLick" @ref="DeleteConfirmation"></ConfirmDelete>
+}

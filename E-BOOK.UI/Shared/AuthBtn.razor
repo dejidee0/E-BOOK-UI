@@ -4,8 +4,13 @@
 <div>
 <AuthorizeView>
     <Authorized>
-            <div class="cusdesign">
+
+            <div class="customdesign d-flex align-items-center gap-4">
+                <AuthorizeView Roles="ADMIN" Context="inner">
+                    <CustomBtn btnType="button" cssClass="cusBtn cusBtn5 text-white" path="/admin-dashboard" text="Goto Admin Dashboard" />
+                </AuthorizeView>
         <CustomBtn btnType="button" cssClass="cusBtn cusBtn4 text-white" OnClick="Logout" text="Log out" />
+        
             </div>
     </Authorized>
     <NotAuthorized>

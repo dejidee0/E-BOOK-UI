@@ -32,9 +32,32 @@ namespace E_BOOK.API.Repository
         {
 
             await IncrementView(Id);
-            var result = await _BookDbContext.Books.FirstOrDefaultAsync(b => b.Id == Id);
-            return result;
+            var result = await _BookDbContext.Books.Include(x => x.Reviews).FirstOrDefaultAsync(b => b.Id == Id);
+            if(result == null)
+            {
+                throw new Exception("book not available");
+            }
+            //var averageRating = result.Reviews.Sum(x => x.Rating) / result.Reviews.Count();
+            
+            //var bookDTO = new BookDTO()
+            //{
+            //  ISBN =  result.ISBN,
+            //  NoPage = result.NoPage,
+            //  AddedToLib = result.AddedToLib,
+            //  Author = result.Author,
+            //  ViewBook = result.ViewBook,
+            //  Description = result.Description,
+            //  Id = result.Id,
+            //  BookImg = result.BookImg,
+            //  Title = result.Title,
+            //  PublisherDate = result.PublisherDate,
+            //  Publisher = result.Publisher,
+            //  Reviews = result.Reviews,
+            //  rating = averageRating,
+            //  AppUserId = result.AppUserId,
+            //};
 
+            return result;
         }
 
         public async Task<bool> RemoveBook(int Id)

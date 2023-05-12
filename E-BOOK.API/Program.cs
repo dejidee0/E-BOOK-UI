@@ -9,6 +9,7 @@ using MODEL;
 using MODEL.Entity;
 using Serilog;
 using System.Text;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 Log.Logger = new LoggerConfiguration()
@@ -21,7 +22,7 @@ Log.Logger = new LoggerConfiguration()
 builder.Services.AddControllers(option =>
 {
     option.ReturnHttpNotAcceptable = true;
-}).AddXmlDataContractSerializerFormatters();
+}).AddXmlDataContractSerializerFormatters().AddJsonOptions(x => x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddSwaggerGen(option =>
 {
@@ -71,16 +72,12 @@ builder.Services.AddAuthentication(option =>
 builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddIdentity<AppUser, IdentityRole>().AddEntityFrameworkStores<E_BookDbContext>().AddDefaultTokenProviders();
-/*builder.Services.AddScoped<IGenerateJwt, GenerateJwt>();
-builder.Services.AddScoped<ICloudinaryService, CloudinaryService>();
-builder.Services.AddScoped<IAccountRepository, AccountRepository>();
-builder.Services.AddScoped<IReviewRepository, ReviewRepository>();*/
+
 builder.Services.ServiceConfig(builder.Configuration);
 builder.Services.AddDbContext<E_BookDbContext>(dbContextOptions => dbContextOptions.UseSqlite(builder.Configuration["ConnectionStrings:ContactApiConnectionString"]));
 var emailConfig = builder.Configuration.GetSection("EmailConfiguration").Get<EmailConfiguration>();
 builder.Services.AddSingleton(emailConfig);
-/*builder.Services.AddScoped<IEmailService, EmailService>();
-builder.Services.AddScoped<IE_BookRepository, E_BookRepository>();*/
+
 builder.Services.Configure<DataProtectionTokenProviderOptions>(opt => opt.TokenLifespan = TimeSpan.FromHours(10));
 builder.Host.UseSerilog();
 var app = builder.Build();

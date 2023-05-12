@@ -1,0 +1,60 @@
+﻿@page "/create_user"
+<div class="shadow-sm p-5 rounded-3 cusgap">
+    <EditForm Model="@user" OnSubmit="HandleRegister" class="d-flex flex-column cusgap">
+        <DataAnnotationsValidator />
+        <div class="d-flex gap-4 flex-column">
+            <div class="form-row d-flex gap-2">
+                <div class="form-group col-6">
+                    <label for="firstname">First Name</label>
+                    <InputText id="firstname" class="form-control" placeholder="First Name" @bind-Value="user.FirstName" />
+                    <ValidationMessage For="@(()=>user.FirstName)" />
+                </div>
+                <div class="form-group col-6">
+                    <label for="lastname">Last Name</label>
+                    <InputText id="lastname" class="form-control" placeholder="Last Name" @bind-Value="user.LastName" />
+                    <ValidationMessage For="@(()=>user.LastName)" />
+                </div>
+            </div>
+            <div class="form-group col-12">
+                <label for="gender">Gender</label>
+                <InputSelect id="gender" @bind-Value="user.Gender" class="form-control">
+                    @foreach (var gender in Enum.GetValues(typeof(Gender)))
+                    {
+                        <option value=@gender>@gender</option>
+                    }
+                </InputSelect>
+                <ValidationMessage For="@(()=>user.Gender)" />
+            </div>
+            <div class="form-row d-flex gap-2">
+                <div class="form-group col-6">
+                    <label for="email">Email</label>
+                    <InputText id="email" class="form-control" placeholder="Email" @bind-Value="user.Email" />
+                    <ValidationMessage For="@(()=>user.Email)" />
+                </div>
+                <div class="form-group col-6">
+                    <label for="phone">Phone Number</label>
+                    <InputText id="phone" class="form-control" placeholder="Phone Number" @bind-Value="user.PhoneNumber" />
+                    <ValidationMessage For="@(()=>user.PhoneNumber)" />
+                </div>
+                
+            </div>
+            <div class="form-row d-flex gap-2">
+                <div class="form-group col-6">
+                    <label for="phone">Password</label>
+                    <InputText id="phone" class="form-control" placeholder="Phone Number" @bind-Value="user.Password" />
+                    <ValidationMessage For="@(()=>user.Password)" />
+                </div>
+                <div class="form-group col-6">
+                    <label for="phone">Confirm Password</label>
+                    <InputText id="phone" class="form-control" placeholder="Phone Number" @bind-Value="user.ConfirmPassword" />
+                    <ValidationMessage For="@(()=>user.ConfirmPassword)" />
+                </div>
+            </div>
+        </div>
+        <div class="d-flex gap-4">
+            <CustomBtn path="/admin-dashboard" cssClass="cusBtn cusBtn2 text-white" text="Back" />
+            <CustomBtn btnType="submit" cssClass="cusBtn cusBtn3 text-white" text="Register User" />
+            
+        </div>
+    </EditForm>
+</div>

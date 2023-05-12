@@ -65,3 +65,15 @@ p{
     .blazor-error-boundary::after {
         content: "An error has occurred."
     }
+.spinner {
+    border: 16px solid silver;
+    border-top: 16px solid #337AB7;
+    border-radius: 50%;
+    animation: spin 700ms linear infinite;
+    top: 40%;
+    left: 55%;
+    position: absolute
+}
+.cusgap {
+    gap: 30px
+}

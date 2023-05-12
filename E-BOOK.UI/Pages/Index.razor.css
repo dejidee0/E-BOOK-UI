@@ -1,0 +1,72 @@
+﻿.inner-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.size {
+    font-size: 2.5rem;
+}
+
+.icon2 {
+    position: absolute;
+    right: -40px;
+}
+
+.icon1 {
+    position: absolute;
+    left: -40px;
+}
+
+.slider-section {
+    display: flex;
+    flex-direction: column
+}
+
+.container-width {
+    width: 90%;
+    margin: 0 auto;
+    padding-block: 2rem;
+}
+
+.w-sample {
+    width: 40%;
+}
+
+.w-small {
+    width: 15%;
+}
+
+.crump {
+    background-image: url("/images/lib.jpg");
+    padding-block: 3rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    background-blend-mode: lighten;
+    display: flex;
+    justify-content: center;
+}
+
+.iner-w {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    width: 80%;
+}
+
+.fic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+}
+
+.sub-fic {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+}

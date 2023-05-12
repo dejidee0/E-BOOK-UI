@@ -10,7 +10,12 @@
     height: 200px;
     width: 40%;
 }
-
+.padded {
+    padding-block: 4rem;
+}
 .cusgap {
     gap: 0.5px;
+}
+.cusgap {
+    gap: 0.5rem;
 }

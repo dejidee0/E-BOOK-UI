@@ -20,24 +20,32 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/bsahe/source/repos/updateGroupb/E-BOOK-LIBRARY(GROUPB)/E-BOOK.UI/Pages/AddBookReview.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkQm9va1Jldmlldy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/bsahe/source/repos/updateGroupb/E-BOOK-LIBRARY(GROUPB)/E-BOOK.UI/Pages/CofirmEmail.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29maXJtRW1haWwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bsahe/source/repos/updateGroupb/E-BOOK-LIBRARY(GROUPB)/E-BOOK.UI/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+[C:/Users/bsahe/source/repos/updateGroupb/E-BOOK-LIBRARY(GROUPB)/E-BOOK.UI/Pages/CreateBook.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlQm9vay5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bsahe/source/repos/updateGroupb/E-BOOK-LIBRARY(GROUPB)/E-BOOK.UI/Pages/FetchData.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+[C:/Users/bsahe/source/repos/updateGroupb/E-BOOK-LIBRARY(GROUPB)/E-BOOK.UI/Pages/CreateUser.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlVXNlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bsahe/source/repos/updateGroupb/E-BOOK-LIBRARY(GROUPB)/E-BOOK.UI/Pages/EditBook.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdEJvb2sucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bsahe/source/repos/updateGroupb/E-BOOK-LIBRARY(GROUPB)/E-BOOK.UI/Pages/EditUser.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFVzZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/bsahe/source/repos/updateGroupb/E-BOOK-LIBRARY(GROUPB)/E-BOOK.UI/Pages/ForgotPassword.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9yZ290UGFzc3dvcmQucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/bsahe/source/repos/updateGroupb/E-BOOK-LIBRARY(GROUPB)/E-BOOK.UI/Pages/Index.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/bsahe/source/repos/updateGroupb/E-BOOK-LIBRARY(GROUPB)/E-BOOK.UI/Pages/Login.razor]
@@ -52,6 +60,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzZXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/bsahe/source/repos/updateGroupb/E-BOOK-LIBRARY(GROUPB)/E-BOOK.UI/Pages/UploadBookImg.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXBsb2FkQm9va0ltZy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bsahe/source/repos/updateGroupb/E-BOOK-LIBRARY(GROUPB)/E-BOOK.UI/Pages/UploadPhoto.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXBsb2FkUGhvdG8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bsahe/source/repos/updateGroupb/E-BOOK-LIBRARY(GROUPB)/E-BOOK.UI/Pages/UserRole.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclJvbGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/bsahe/source/repos/updateGroupb/E-BOOK-LIBRARY(GROUPB)/E-BOOK.UI/Shared/AuthBtn.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEF1dGhCdG4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -62,6 +82,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/bsahe/source/repos/updateGroupb/E-BOOK-LIBRARY(GROUPB)/E-BOOK.UI/Shared/BookInfo.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEJvb2tJbmZvLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bsahe/source/repos/updateGroupb/E-BOOK-LIBRARY(GROUPB)/E-BOOK.UI/Shared/ConfirmDelete.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbmZpcm1EZWxldGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bsahe/source/repos/updateGroupb/E-BOOK-LIBRARY(GROUPB)/E-BOOK.UI/Shared/Details.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERldGFpbHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/bsahe/source/repos/updateGroupb/E-BOOK-LIBRARY(GROUPB)/E-BOOK.UI/Shared/EmptyLayout.razor]
@@ -76,8 +104,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFNpbXBsZUJ0bi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bsahe/source/repos/updateGroupb/E-BOOK-LIBRARY(GROUPB)/E-BOOK.UI/Shared/SurveyPrompt.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+[C:/Users/bsahe/source/repos/updateGroupb/E-BOOK-LIBRARY(GROUPB)/E-BOOK.UI/Shared/UserCard.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFVzZXJDYXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bsahe/source/repos/updateGroupb/E-BOOK-LIBRARY(GROUPB)/E-BOOK.UI/Shared/UserOtherDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFVzZXJPdGhlckRldGFpbHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/bsahe/source/repos/updateGroupb/E-BOOK-LIBRARY(GROUPB)/E-BOOK.UI/Shared/UserReview.razor]
@@ -88,9 +120,29 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/bsahe/source/repos/updateGroupb/E-BOOK-LIBRARY(GROUPB)/E-BOOK.UI/Pages/Dashboard.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFzaGJvYXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-5ivx64l8wf
+
+[C:/Users/bsahe/source/repos/updateGroupb/E-BOOK-LIBRARY(GROUPB)/E-BOOK.UI/Pages/DashboardBook.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFzaGJvYXJkQm9vay5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-a8oyz3gche
+
+[C:/Users/bsahe/source/repos/updateGroupb/E-BOOK-LIBRARY(GROUPB)/E-BOOK.UI/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-y8gnz931bi
+
 [C:/Users/bsahe/source/repos/updateGroupb/E-BOOK-LIBRARY(GROUPB)/E-BOOK.UI/Pages/SingleBook.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2luZ2xlQm9vay5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-6ijoeokxk5
+
+[C:/Users/bsahe/source/repos/updateGroupb/E-BOOK-LIBRARY(GROUPB)/E-BOOK.UI/Pages/ViewBook.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld0Jvb2sucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-43it5ap2lx
+
+[C:/Users/bsahe/source/repos/updateGroupb/E-BOOK-LIBRARY(GROUPB)/E-BOOK.UI/Pages/ViewUser.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld1VzZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-y1c2uf1tge
 
 [C:/Users/bsahe/source/repos/updateGroupb/E-BOOK-LIBRARY(GROUPB)/E-BOOK.UI/Shared/CustomBtn.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEN1c3RvbUJ0bi5yYXpvcg==

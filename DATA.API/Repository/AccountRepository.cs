@@ -4,9 +4,11 @@ using E_BOOK.API.Repository.Repository_Interface;
 using E_BOOK.API.Service.Service_Interface;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using MODEL.DTO;
 using MODEL.Entity;
+using static System.Reflection.Metadata.BlobBuilder;
 
 namespace E_BOOK.API.Repository
 {
@@ -218,6 +220,39 @@ namespace E_BOOK.API.Repository
                 return false;
             }
             throw new Exception("User to delete not available");
+        }
+        
+        public async Task<PaginatedUser> GetAllUser(int pageNumber, int perPageSize)
+        {
+            var getAllUser =  _userManager.Users;
+            pageNumber = pageNumber < 1 ? 1 : pageNumber;
+            perPageSize = perPageSize < 1 ? 5 : perPageSize;
+            var totalCount = getAllUser.Count();
+            var totalPages = (int)Math.Ceiling((double)totalCount / perPageSize);
+            var paginated = await getAllUser.Skip((pageNumber - 1) * perPageSize).Take(perPageSize).ToListAsync();
+            var DisplayUser = new List<DisplayFindUserDTO>();
+            foreach (var item in paginated)
+            {
+               DisplayUser.Add(new DisplayFindUserDTO 
+               {
+                   UserName = item.UserName,
+                Email = item.Email,
+                FirstName = item.FirstName,
+                PhoneNumber = item.PhoneNumber,
+                ProfilePicture = item.ProfilePicture,
+                LastName = item.LastName,
+                Gender = item.Gender,
+                Id = item.Id
+            });
+            }
+            var result = new PaginatedUser
+            {
+                CurrentPage = pageNumber,
+                PageSize = perPageSize,
+                TotalPages = totalPages,
+                User = DisplayUser 
+            };
+            return result;
         }
     }
 }

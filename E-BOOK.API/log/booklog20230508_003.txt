@@ -1,0 +1,780 @@
+2023-05-08 21:06:00.396 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-05-08 21:06:00.732 +01:00 [DBG] Hosting starting
+2023-05-08 21:06:00.788 +01:00 [INF] User profile is available. Using 'C:\Users\bsahe\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-08 21:06:00.803 +01:00 [DBG] Reading data from file 'C:\Users\bsahe\AppData\Local\ASP.NET\DataProtection-Keys\key-ae05be0e-0a9c-48bc-ac3a-d7d82fd26ba0.xml'.
+2023-05-08 21:06:00.828 +01:00 [DBG] Found key {ae05be0e-0a9c-48bc-ac3a-d7d82fd26ba0}.
+2023-05-08 21:06:00.859 +01:00 [DBG] Considering key {ae05be0e-0a9c-48bc-ac3a-d7d82fd26ba0} with expiration date 2023-06-21 23:35:22Z as default key.
+2023-05-08 21:06:00.863 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-05-08 21:06:00.871 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2023-05-08 21:06:00.876 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-05-08 21:06:00.891 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2023-05-08 21:06:00.897 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2023-05-08 21:06:00.908 +01:00 [DBG] Using key {ae05be0e-0a9c-48bc-ac3a-d7d82fd26ba0} as the default key.
+2023-05-08 21:06:00.912 +01:00 [DBG] Key ring with default key {ae05be0e-0a9c-48bc-ac3a-d7d82fd26ba0} was loaded during application startup.
+2023-05-08 21:06:01.153 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 00D5B8A748A32CF248CC35D3C1B514BD27DFD320)
+2023-05-08 21:06:01.306 +01:00 [DBG] Connection id "0HMQFVUIM5K6V" accepted.
+2023-05-08 21:06:01.321 +01:00 [INF] Now listening on: https://localhost:7003
+2023-05-08 21:06:01.443 +01:00 [DBG] Connection id "0HMQFVUIM5K70" accepted.
+2023-05-08 21:06:01.443 +01:00 [DBG] Connection id "0HMQFVUIM5K6V" started.
+2023-05-08 21:06:01.444 +01:00 [INF] Now listening on: http://localhost:5184
+2023-05-08 21:06:01.445 +01:00 [DBG] Connection id "0HMQFVUIM5K70" started.
+2023-05-08 21:06:01.453 +01:00 [DBG] Loaded hosting startup assembly E-BOOK.API
+2023-05-08 21:06:01.456 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-05-08 21:06:01.459 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-05-08 21:06:01.462 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-08 21:06:01.465 +01:00 [INF] Hosting environment: Development
+2023-05-08 21:06:01.468 +01:00 [INF] Content root path: C:\Users\bsahe\source\repos\updateGroupb\E-BOOK-LIBRARY(GROUPB)\E-BOOK.API\
+2023-05-08 21:06:01.470 +01:00 [DBG] Hosting started
+2023-05-08 21:06:01.570 +01:00 [DBG] Connection 0HMQFVUIM5K70 established using the following protocol: "Tls13"
+2023-05-08 21:06:01.570 +01:00 [DBG] Connection 0HMQFVUIM5K6V established using the following protocol: "Tls13"
+2023-05-08 21:06:01.661 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7003/api/book/popular?pageNumber=1&perPageSize=6 - -
+2023-05-08 21:06:01.661 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7003/api/account/search/email?email=bsaheed79@gmail.com - -
+2023-05-08 21:06:01.696 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-05-08 21:06:01.696 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-05-08 21:06:01.821 +01:00 [DBG] 2 candidate(s) found for the request path '/api/book/popular'
+2023-05-08 21:06:01.821 +01:00 [DBG] 1 candidate(s) found for the request path '/api/account/search/email'
+2023-05-08 21:06:01.838 +01:00 [DBG] Endpoint 'E_BOOK.API.Controllers.BookController.GetAllPopularBooks (E-BOOK.API)' with route pattern 'api/book/popular' is valid for the request path '/api/book/popular'
+2023-05-08 21:06:01.842 +01:00 [DBG] Endpoint 'E_BOOK.API.Controllers.AccountController.FindUserbyEmail (E-BOOK.API)' with route pattern 'api/account/search/email' is valid for the request path '/api/account/search/email'
+2023-05-08 21:06:01.845 +01:00 [DBG] Endpoint 'E_BOOK.API.Controllers.BookController.GetBookById (E-BOOK.API)' with route pattern 'api/book/{id}' is valid for the request path '/api/book/popular'
+2023-05-08 21:06:01.862 +01:00 [DBG] Request matched endpoint 'E_BOOK.API.Controllers.AccountController.FindUserbyEmail (E-BOOK.API)'
+2023-05-08 21:06:01.868 +01:00 [DBG] Request matched endpoint 'E_BOOK.API.Controllers.BookController.GetAllPopularBooks (E-BOOK.API)'
+2023-05-08 21:06:01.962 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-05-08 21:06:01.962 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-05-08 21:06:02.182 +01:00 [DBG] AuthenticationScheme: Identity.Application was not authenticated.
+2023-05-08 21:06:02.182 +01:00 [DBG] AuthenticationScheme: Identity.Application was not authenticated.
+2023-05-08 21:06:02.264 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-05-08 21:06:02.356 +01:00 [INF] Executing endpoint 'E_BOOK.API.Controllers.BookController.GetAllPopularBooks (E-BOOK.API)'
+2023-05-08 21:06:02.444 +01:00 [INF] Route matched with {action = "GetAllPopularBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAllPopularBooks(Int32, Int32) on controller E_BOOK.API.Controllers.BookController (E-BOOK.API).
+2023-05-08 21:06:02.447 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-05-08 21:06:02.451 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-05-08 21:06:02.455 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-05-08 21:06:02.458 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-05-08 21:06:02.461 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-05-08 21:06:02.465 +01:00 [DBG] Executing controller factory for controller E_BOOK.API.Controllers.BookController (E-BOOK.API)
+2023-05-08 21:06:02.662 +01:00 [DBG] Successfully validated the token.
+2023-05-08 21:06:02.685 +01:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2023-05-08 21:06:02.692 +01:00 [DBG] Authorization was successful.
+2023-05-08 21:06:02.711 +01:00 [INF] Executing endpoint 'E_BOOK.API.Controllers.AccountController.FindUserbyEmail (E-BOOK.API)'
+2023-05-08 21:06:02.726 +01:00 [INF] Route matched with {action = "FindUserbyEmail", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] FindUserbyEmail(System.String) on controller E_BOOK.API.Controllers.AccountController (E-BOOK.API).
+2023-05-08 21:06:02.772 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-05-08 21:06:02.772 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-05-08 21:06:02.778 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-05-08 21:06:02.841 +01:00 [DBG] Executed controller factory for controller E_BOOK.API.Controllers.BookController (E-BOOK.API)
+2023-05-08 21:06:02.971 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-05-08 21:06:02.976 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-05-08 21:06:02.987 +01:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' ...
+2023-05-08 21:06:02.989 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-05-08 21:06:02.996 +01:00 [DBG] Executing controller factory for controller E_BOOK.API.Controllers.AccountController (E-BOOK.API)
+2023-05-08 21:06:02.996 +01:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' using the name 'pageNumber' in request data ...
+2023-05-08 21:06:03.008 +01:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-05-08 21:06:03.023 +01:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-05-08 21:06:03.024 +01:00 [DBG] Executed controller factory for controller E_BOOK.API.Controllers.AccountController (E-BOOK.API)
+2023-05-08 21:06:03.025 +01:00 [DBG] Attempting to validate the bound parameter 'pageNumber' of type 'System.Int32' ...
+2023-05-08 21:06:03.027 +01:00 [DBG] Attempting to bind parameter 'email' of type 'System.String' ...
+2023-05-08 21:06:03.030 +01:00 [DBG] Attempting to bind parameter 'email' of type 'System.String' using the name 'email' in request data ...
+2023-05-08 21:06:03.030 +01:00 [DBG] Done attempting to validate the bound parameter 'pageNumber' of type 'System.Int32'.
+2023-05-08 21:06:03.033 +01:00 [DBG] Done attempting to bind parameter 'email' of type 'System.String'.
+2023-05-08 21:06:03.037 +01:00 [DBG] Done attempting to bind parameter 'email' of type 'System.String'.
+2023-05-08 21:06:03.038 +01:00 [DBG] Attempting to bind parameter 'perPageSize' of type 'System.Int32' ...
+2023-05-08 21:06:03.038 +01:00 [DBG] Attempting to validate the bound parameter 'email' of type 'System.String' ...
+2023-05-08 21:06:03.042 +01:00 [DBG] Attempting to bind parameter 'perPageSize' of type 'System.Int32' using the name 'perPageSize' in request data ...
+2023-05-08 21:06:03.046 +01:00 [DBG] Done attempting to bind parameter 'perPageSize' of type 'System.Int32'.
+2023-05-08 21:06:03.048 +01:00 [DBG] Done attempting to bind parameter 'perPageSize' of type 'System.Int32'.
+2023-05-08 21:06:03.050 +01:00 [DBG] Attempting to validate the bound parameter 'perPageSize' of type 'System.Int32' ...
+2023-05-08 21:06:03.052 +01:00 [DBG] Done attempting to validate the bound parameter 'perPageSize' of type 'System.Int32'.
+2023-05-08 21:06:03.061 +01:00 [DBG] Done attempting to validate the bound parameter 'email' of type 'System.String'.
+2023-05-08 21:06:04.354 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<string>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2023-05-08 21:06:04.356 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<string>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2023-05-08 21:06:05.064 +01:00 [INF] Entity Framework Core 6.0.1 initialized 'E_BookDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.1' with options: None
+2023-05-08 21:06:05.064 +01:00 [INF] Entity Framework Core 6.0.1 initialized 'E_BookDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.1' with options: None
+2023-05-08 21:06:05.144 +01:00 [DBG] Compiling query expression: 
+'DbSet<Book>()
+    .OrderByDescending(b => b.ViewBook)'
+2023-05-08 21:06:05.145 +01:00 [DBG] Compiling query expression: 
+'DbSet<AppUser>()
+    .SingleOrDefault(u => u.NormalizedEmail == __normalizedEmail_0)'
+2023-05-08 21:06:05.469 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Book>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Book.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Book.AddedToLib (DateTime) Required, 1], [Property: Book.AppUserId (string) Required FK Index, 2], [Property: Book.Author (string) Required, 3], [Property: Book.BookImg (string) Required, 4], [Property: Book.Description (string) Required, 5], [Property: Book.ISBN (string) Required, 6], [Property: Book.NoPage (int) Required, 7], [Property: Book.Publisher (string) Required, 8], [Property: Book.PublisherDate (DateTime) Required, 9], [Property: Book.Rating (double) Required, 10], [Property: Book.Title (string) Required, 11], [Property: Book.ViewBook (int) Required, 12] }
+        SELECT b.Id, b.AddedToLib, b.AppUserId, b.Author, b.BookImg, b.Description, b.ISBN, b.NoPage, b.Publisher, b.PublisherDate, b.Rating, b.Title, b.ViewBook
+        FROM Books AS b
+        ORDER BY b.ViewBook DESC), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Book>, 
+    MODEL.E_BookDbContext, 
+    False, 
+    False, 
+    True
+)'
+2023-05-08 21:06:05.469 +01:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<AppUser>(
+    asyncEnumerable: new SingleQueryingEnumerable<AppUser>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: AppUser.Id (string) Required PK AfterSave:Throw, 0], [Property: AppUser.AccessFailedCount (int) Required, 1], [Property: AppUser.ConcurrencyStamp (string) Concurrency, 2], [Property: AppUser.Email (string) MaxLength(256), 3], [Property: AppUser.EmailConfirmed (bool) Required, 4], [Property: AppUser.FirstName (string) Required, 5], [Property: AppUser.Gender (Gender) Required, 6], [Property: AppUser.LastName (string) Required, 7], [Property: AppUser.LockoutEnabled (bool) Required, 8], [Property: AppUser.LockoutEnd (DateTimeOffset?), 9], [Property: AppUser.NormalizedEmail (string) Index MaxLength(256), 10], [Property: AppUser.NormalizedUserName (string) Index MaxLength(256), 11], [Property: AppUser.PasswordHash (string), 12], [Property: AppUser.PhoneNumber (string), 13], [Property: AppUser.PhoneNumberConfirmed (bool) Required, 14], [Property: AppUser.ProfilePicture (string) Required, 15], [Property: AppUser.SecurityStamp (string), 16], [Property: AppUser.TwoFactorEnabled (bool) Required, 17], [Property: AppUser.UserName (string) MaxLength(256), 18] }
+            SELECT TOP(2) a.Id, a.AccessFailedCount, a.ConcurrencyStamp, a.Email, a.EmailConfirmed, a.FirstName, a.Gender, a.LastName, a.LockoutEnabled, a.LockoutEnd, a.NormalizedEmail, a.NormalizedUserName, a.PasswordHash, a.PhoneNumber, a.PhoneNumberConfirmed, a.ProfilePicture, a.SecurityStamp, a.TwoFactorEnabled, a.UserName
+            FROM AspNetUsers AS a
+            WHERE a.NormalizedEmail == @__normalizedEmail_0), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, AppUser>, 
+        MODEL.E_BookDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2023-05-08 21:06:05.526 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-05-08 21:06:05.526 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-05-08 21:06:05.592 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (61ms).
+2023-05-08 21:06:05.592 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (56ms).
+2023-05-08 21:06:05.601 +01:00 [DBG] Opening connection to database 'main' on server 'E-Book.db'.
+2023-05-08 21:06:05.604 +01:00 [DBG] Opening connection to database 'main' on server 'E-Book.db'.
+2023-05-08 21:06:05.632 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\bsahe\source\repos\updateGroupb\E-BOOK-LIBRARY(GROUPB)\E-BOOK.API\E-Book.db'.
+2023-05-08 21:06:05.632 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\bsahe\source\repos\updateGroupb\E-BOOK-LIBRARY(GROUPB)\E-BOOK.API\E-Book.db'.
+2023-05-08 21:06:05.649 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."AddedToLib", "b"."AppUserId", "b"."Author", "b"."BookImg", "b"."Description", "b"."ISBN", "b"."NoPage", "b"."Publisher", "b"."PublisherDate", "b"."Rating", "b"."Title", "b"."ViewBook"
+FROM "Books" AS "b"
+ORDER BY "b"."ViewBook" DESC
+2023-05-08 21:06:05.649 +01:00 [DBG] Executing DbCommand [Parameters=[@__normalizedEmail_0='?' (Size = 19)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FirstName", "a"."Gender", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."ProfilePicture", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-05-08 21:06:05.695 +01:00 [INF] Executed DbCommand (49ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."AddedToLib", "b"."AppUserId", "b"."Author", "b"."BookImg", "b"."Description", "b"."ISBN", "b"."NoPage", "b"."Publisher", "b"."PublisherDate", "b"."Rating", "b"."Title", "b"."ViewBook"
+FROM "Books" AS "b"
+ORDER BY "b"."ViewBook" DESC
+2023-05-08 21:06:05.695 +01:00 [INF] Executed DbCommand (52ms) [Parameters=[@__normalizedEmail_0='?' (Size = 19)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FirstName", "a"."Gender", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."ProfilePicture", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-05-08 21:06:05.747 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:05.747 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'AppUser' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:05.839 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:05.841 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:05.842 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:05.844 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:05.848 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:05.852 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:05.853 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:05.856 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:05.858 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:05.859 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:05.863 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:05.869 +01:00 [DBG] A data reader was disposed.
+2023-05-08 21:06:05.871 +01:00 [DBG] A data reader was disposed.
+2023-05-08 21:06:05.882 +01:00 [DBG] Closing connection to database 'main' on server 'C:\Users\bsahe\source\repos\updateGroupb\E-BOOK-LIBRARY(GROUPB)\E-BOOK.API\E-Book.db'.
+2023-05-08 21:06:05.882 +01:00 [DBG] Closing connection to database 'main' on server 'C:\Users\bsahe\source\repos\updateGroupb\E-BOOK-LIBRARY(GROUPB)\E-BOOK.API\E-Book.db'.
+2023-05-08 21:06:05.892 +01:00 [DBG] Closed connection to database 'main' on server 'E-Book.db'.
+2023-05-08 21:06:05.892 +01:00 [DBG] Closed connection to database 'main' on server 'E-Book.db'.
+2023-05-08 21:06:05.900 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-05-08 21:06:05.900 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-05-08 21:06:05.906 +01:00 [DBG] No information found on request to perform content negotiation.
+2023-05-08 21:06:05.907 +01:00 [DBG] No information found on request to perform content negotiation.
+2023-05-08 21:06:05.908 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-05-08 21:06:05.909 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-05-08 21:06:05.909 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-05-08 21:06:05.910 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-05-08 21:06:05.913 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-05-08 21:06:05.913 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-05-08 21:06:05.915 +01:00 [INF] Executing OkObjectResult, writing value of type 'MODEL.DTO.PaginatedBooks'.
+2023-05-08 21:06:05.917 +01:00 [INF] Executing OkObjectResult, writing value of type 'MODEL.DTO.DisplayFindUserDTO'.
+2023-05-08 21:06:05.982 +01:00 [INF] Executed action E_BOOK.API.Controllers.AccountController.FindUserbyEmail (E-BOOK.API) in 2977.4673ms
+2023-05-08 21:06:05.982 +01:00 [INF] Executed action E_BOOK.API.Controllers.BookController.GetAllPopularBooks (E-BOOK.API) in 3509.1553ms
+2023-05-08 21:06:05.986 +01:00 [INF] Executed endpoint 'E_BOOK.API.Controllers.AccountController.FindUserbyEmail (E-BOOK.API)'
+2023-05-08 21:06:05.988 +01:00 [INF] Executed endpoint 'E_BOOK.API.Controllers.BookController.GetAllPopularBooks (E-BOOK.API)'
+2023-05-08 21:06:05.990 +01:00 [DBG] Connection id "0HMQFVUIM5K6V" completed keep alive response.
+2023-05-08 21:06:05.991 +01:00 [DBG] Connection id "0HMQFVUIM5K70" completed keep alive response.
+2023-05-08 21:06:05.995 +01:00 [DBG] 'E_BookDbContext' disposed.
+2023-05-08 21:06:05.995 +01:00 [DBG] 'E_BookDbContext' disposed.
+2023-05-08 21:06:06.002 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7003/api/book/popular?pageNumber=1&perPageSize=6 - - - 200 - application/json;+charset=utf-8 4345.8833ms
+2023-05-08 21:06:06.002 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7003/api/account/search/email?email=bsaheed79@gmail.com - - - 200 - application/json;+charset=utf-8 4347.0213ms
+2023-05-08 21:06:06.029 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7003/api/book/popular?pageNumber=2&perPageSize=6 - -
+2023-05-08 21:06:06.036 +01:00 [DBG] 2 candidate(s) found for the request path '/api/book/popular'
+2023-05-08 21:06:06.038 +01:00 [DBG] Endpoint 'E_BOOK.API.Controllers.BookController.GetAllPopularBooks (E-BOOK.API)' with route pattern 'api/book/popular' is valid for the request path '/api/book/popular'
+2023-05-08 21:06:06.040 +01:00 [DBG] Endpoint 'E_BOOK.API.Controllers.BookController.GetBookById (E-BOOK.API)' with route pattern 'api/book/{id}' is valid for the request path '/api/book/popular'
+2023-05-08 21:06:06.042 +01:00 [DBG] Request matched endpoint 'E_BOOK.API.Controllers.BookController.GetAllPopularBooks (E-BOOK.API)'
+2023-05-08 21:06:06.044 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-05-08 21:06:06.049 +01:00 [DBG] AuthenticationScheme: Identity.Application was not authenticated.
+2023-05-08 21:06:06.059 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-05-08 21:06:06.061 +01:00 [INF] Executing endpoint 'E_BOOK.API.Controllers.BookController.GetAllPopularBooks (E-BOOK.API)'
+2023-05-08 21:06:06.063 +01:00 [INF] Route matched with {action = "GetAllPopularBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAllPopularBooks(Int32, Int32) on controller E_BOOK.API.Controllers.BookController (E-BOOK.API).
+2023-05-08 21:06:06.067 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-05-08 21:06:06.068 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-05-08 21:06:06.070 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-05-08 21:06:06.072 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-05-08 21:06:06.074 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-05-08 21:06:06.076 +01:00 [DBG] Executing controller factory for controller E_BOOK.API.Controllers.BookController (E-BOOK.API)
+2023-05-08 21:06:06.078 +01:00 [DBG] Executed controller factory for controller E_BOOK.API.Controllers.BookController (E-BOOK.API)
+2023-05-08 21:06:06.084 +01:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' ...
+2023-05-08 21:06:06.086 +01:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' using the name 'pageNumber' in request data ...
+2023-05-08 21:06:06.088 +01:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-05-08 21:06:06.090 +01:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-05-08 21:06:06.091 +01:00 [DBG] Attempting to validate the bound parameter 'pageNumber' of type 'System.Int32' ...
+2023-05-08 21:06:06.094 +01:00 [DBG] Done attempting to validate the bound parameter 'pageNumber' of type 'System.Int32'.
+2023-05-08 21:06:06.098 +01:00 [DBG] Attempting to bind parameter 'perPageSize' of type 'System.Int32' ...
+2023-05-08 21:06:06.101 +01:00 [DBG] Attempting to bind parameter 'perPageSize' of type 'System.Int32' using the name 'perPageSize' in request data ...
+2023-05-08 21:06:06.103 +01:00 [DBG] Done attempting to bind parameter 'perPageSize' of type 'System.Int32'.
+2023-05-08 21:06:06.104 +01:00 [DBG] Done attempting to bind parameter 'perPageSize' of type 'System.Int32'.
+2023-05-08 21:06:06.105 +01:00 [DBG] Attempting to validate the bound parameter 'perPageSize' of type 'System.Int32' ...
+2023-05-08 21:06:06.106 +01:00 [DBG] Done attempting to validate the bound parameter 'perPageSize' of type 'System.Int32'.
+2023-05-08 21:06:06.227 +01:00 [INF] Entity Framework Core 6.0.1 initialized 'E_BookDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.1' with options: None
+2023-05-08 21:06:06.240 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-05-08 21:06:06.242 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2023-05-08 21:06:06.243 +01:00 [DBG] Opening connection to database 'main' on server 'E-Book.db'.
+2023-05-08 21:06:06.245 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\bsahe\source\repos\updateGroupb\E-BOOK-LIBRARY(GROUPB)\E-BOOK.API\E-Book.db'.
+2023-05-08 21:06:06.247 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."AddedToLib", "b"."AppUserId", "b"."Author", "b"."BookImg", "b"."Description", "b"."ISBN", "b"."NoPage", "b"."Publisher", "b"."PublisherDate", "b"."Rating", "b"."Title", "b"."ViewBook"
+FROM "Books" AS "b"
+ORDER BY "b"."ViewBook" DESC
+2023-05-08 21:06:06.250 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."AddedToLib", "b"."AppUserId", "b"."Author", "b"."BookImg", "b"."Description", "b"."ISBN", "b"."NoPage", "b"."Publisher", "b"."PublisherDate", "b"."Rating", "b"."Title", "b"."ViewBook"
+FROM "Books" AS "b"
+ORDER BY "b"."ViewBook" DESC
+2023-05-08 21:06:06.307 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:06.311 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:06.321 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:06.323 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:06.326 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:06.331 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:06.334 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:06.336 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:06.339 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:06.340 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:06.341 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:06.342 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:06.344 +01:00 [DBG] A data reader was disposed.
+2023-05-08 21:06:06.346 +01:00 [DBG] Closing connection to database 'main' on server 'C:\Users\bsahe\source\repos\updateGroupb\E-BOOK-LIBRARY(GROUPB)\E-BOOK.API\E-Book.db'.
+2023-05-08 21:06:06.347 +01:00 [DBG] Closed connection to database 'main' on server 'E-Book.db'.
+2023-05-08 21:06:06.350 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-05-08 21:06:06.352 +01:00 [DBG] No information found on request to perform content negotiation.
+2023-05-08 21:06:06.353 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-05-08 21:06:06.354 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-05-08 21:06:06.355 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-05-08 21:06:06.356 +01:00 [INF] Executing OkObjectResult, writing value of type 'MODEL.DTO.PaginatedBooks'.
+2023-05-08 21:06:06.425 +01:00 [INF] Executed action E_BOOK.API.Controllers.BookController.GetAllPopularBooks (E-BOOK.API) in 348.9104ms
+2023-05-08 21:06:06.438 +01:00 [INF] Executed endpoint 'E_BOOK.API.Controllers.BookController.GetAllPopularBooks (E-BOOK.API)'
+2023-05-08 21:06:06.440 +01:00 [DBG] Connection id "0HMQFVUIM5K6V" completed keep alive response.
+2023-05-08 21:06:06.441 +01:00 [DBG] 'E_BookDbContext' disposed.
+2023-05-08 21:06:06.442 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7003/api/book/popular?pageNumber=2&perPageSize=6 - - - 200 - application/json;+charset=utf-8 412.9928ms
+2023-05-08 21:06:06.443 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7003/api/book/recent?pageNumber=1&perPageSize=6 - -
+2023-05-08 21:06:06.444 +01:00 [DBG] 2 candidate(s) found for the request path '/api/book/recent'
+2023-05-08 21:06:06.446 +01:00 [DBG] Endpoint 'E_BOOK.API.Controllers.BookController.RecentBooks (E-BOOK.API)' with route pattern 'api/book/recent' is valid for the request path '/api/book/recent'
+2023-05-08 21:06:06.447 +01:00 [DBG] Endpoint 'E_BOOK.API.Controllers.BookController.GetBookById (E-BOOK.API)' with route pattern 'api/book/{id}' is valid for the request path '/api/book/recent'
+2023-05-08 21:06:06.452 +01:00 [DBG] Request matched endpoint 'E_BOOK.API.Controllers.BookController.RecentBooks (E-BOOK.API)'
+2023-05-08 21:06:06.457 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-05-08 21:06:06.458 +01:00 [DBG] AuthenticationScheme: Identity.Application was not authenticated.
+2023-05-08 21:06:06.460 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-05-08 21:06:06.461 +01:00 [INF] Executing endpoint 'E_BOOK.API.Controllers.BookController.RecentBooks (E-BOOK.API)'
+2023-05-08 21:06:06.471 +01:00 [INF] Route matched with {action = "RecentBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] RecentBooks(Int32, Int32) on controller E_BOOK.API.Controllers.BookController (E-BOOK.API).
+2023-05-08 21:06:06.524 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-05-08 21:06:06.526 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-05-08 21:06:06.528 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-05-08 21:06:06.530 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-05-08 21:06:06.533 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-05-08 21:06:06.535 +01:00 [DBG] Executing controller factory for controller E_BOOK.API.Controllers.BookController (E-BOOK.API)
+2023-05-08 21:06:06.540 +01:00 [DBG] Executed controller factory for controller E_BOOK.API.Controllers.BookController (E-BOOK.API)
+2023-05-08 21:06:06.541 +01:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' ...
+2023-05-08 21:06:06.571 +01:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' using the name 'pageNumber' in request data ...
+2023-05-08 21:06:06.586 +01:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-05-08 21:06:06.598 +01:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-05-08 21:06:06.601 +01:00 [DBG] Attempting to validate the bound parameter 'pageNumber' of type 'System.Int32' ...
+2023-05-08 21:06:06.603 +01:00 [DBG] Done attempting to validate the bound parameter 'pageNumber' of type 'System.Int32'.
+2023-05-08 21:06:06.610 +01:00 [DBG] Attempting to bind parameter 'perPageSize' of type 'System.Int32' ...
+2023-05-08 21:06:06.616 +01:00 [DBG] Attempting to bind parameter 'perPageSize' of type 'System.Int32' using the name 'perPageSize' in request data ...
+2023-05-08 21:06:06.621 +01:00 [DBG] Done attempting to bind parameter 'perPageSize' of type 'System.Int32'.
+2023-05-08 21:06:06.623 +01:00 [DBG] Done attempting to bind parameter 'perPageSize' of type 'System.Int32'.
+2023-05-08 21:06:06.625 +01:00 [DBG] Attempting to validate the bound parameter 'perPageSize' of type 'System.Int32' ...
+2023-05-08 21:06:06.627 +01:00 [DBG] Done attempting to validate the bound parameter 'perPageSize' of type 'System.Int32'.
+2023-05-08 21:06:06.633 +01:00 [INF] Entity Framework Core 6.0.1 initialized 'E_BookDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.1' with options: None
+2023-05-08 21:06:06.643 +01:00 [DBG] Compiling query expression: 
+'DbSet<Book>()
+    .Where(b => b.AddedToLib >= __OneWeekAgo_0)
+    .OrderByDescending(b => b.AddedToLib)'
+2023-05-08 21:06:06.655 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Book>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Book.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Book.AddedToLib (DateTime) Required, 1], [Property: Book.AppUserId (string) Required FK Index, 2], [Property: Book.Author (string) Required, 3], [Property: Book.BookImg (string) Required, 4], [Property: Book.Description (string) Required, 5], [Property: Book.ISBN (string) Required, 6], [Property: Book.NoPage (int) Required, 7], [Property: Book.Publisher (string) Required, 8], [Property: Book.PublisherDate (DateTime) Required, 9], [Property: Book.Rating (double) Required, 10], [Property: Book.Title (string) Required, 11], [Property: Book.ViewBook (int) Required, 12] }
+        SELECT b.Id, b.AddedToLib, b.AppUserId, b.Author, b.BookImg, b.Description, b.ISBN, b.NoPage, b.Publisher, b.PublisherDate, b.Rating, b.Title, b.ViewBook
+        FROM Books AS b
+        WHERE b.AddedToLib >= @__OneWeekAgo_0
+        ORDER BY b.AddedToLib DESC), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Book>, 
+    MODEL.E_BookDbContext, 
+    False, 
+    False, 
+    True
+)'
+2023-05-08 21:06:06.659 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-05-08 21:06:06.659 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-05-08 21:06:06.661 +01:00 [DBG] Opening connection to database 'main' on server 'E-Book.db'.
+2023-05-08 21:06:06.662 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\bsahe\source\repos\updateGroupb\E-BOOK-LIBRARY(GROUPB)\E-BOOK.API\E-Book.db'.
+2023-05-08 21:06:06.665 +01:00 [DBG] Executing DbCommand [Parameters=[@__OneWeekAgo_0='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."AddedToLib", "b"."AppUserId", "b"."Author", "b"."BookImg", "b"."Description", "b"."ISBN", "b"."NoPage", "b"."Publisher", "b"."PublisherDate", "b"."Rating", "b"."Title", "b"."ViewBook"
+FROM "Books" AS "b"
+WHERE "b"."AddedToLib" >= @__OneWeekAgo_0
+ORDER BY "b"."AddedToLib" DESC
+2023-05-08 21:06:06.672 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[@__OneWeekAgo_0='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."AddedToLib", "b"."AppUserId", "b"."Author", "b"."BookImg", "b"."Description", "b"."ISBN", "b"."NoPage", "b"."Publisher", "b"."PublisherDate", "b"."Rating", "b"."Title", "b"."ViewBook"
+FROM "Books" AS "b"
+WHERE "b"."AddedToLib" >= @__OneWeekAgo_0
+ORDER BY "b"."AddedToLib" DESC
+2023-05-08 21:06:06.675 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:06.678 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:06.683 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:06.685 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:06.686 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:06.687 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:06.689 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:06.690 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:06.691 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:06.694 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:06.700 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:06.702 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:06.704 +01:00 [DBG] A data reader was disposed.
+2023-05-08 21:06:06.704 +01:00 [DBG] Closing connection to database 'main' on server 'C:\Users\bsahe\source\repos\updateGroupb\E-BOOK-LIBRARY(GROUPB)\E-BOOK.API\E-Book.db'.
+2023-05-08 21:06:06.706 +01:00 [DBG] Closed connection to database 'main' on server 'E-Book.db'.
+2023-05-08 21:06:06.708 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-05-08 21:06:06.713 +01:00 [DBG] No information found on request to perform content negotiation.
+2023-05-08 21:06:06.714 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-05-08 21:06:06.715 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-05-08 21:06:06.716 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-05-08 21:06:06.717 +01:00 [INF] Executing OkObjectResult, writing value of type 'MODEL.DTO.PaginatedBooks'.
+2023-05-08 21:06:06.718 +01:00 [INF] Executed action E_BOOK.API.Controllers.BookController.RecentBooks (E-BOOK.API) in 182.4026ms
+2023-05-08 21:06:06.719 +01:00 [INF] Executed endpoint 'E_BOOK.API.Controllers.BookController.RecentBooks (E-BOOK.API)'
+2023-05-08 21:06:06.721 +01:00 [DBG] Connection id "0HMQFVUIM5K6V" completed keep alive response.
+2023-05-08 21:06:06.722 +01:00 [DBG] 'E_BookDbContext' disposed.
+2023-05-08 21:06:06.723 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7003/api/book/recent?pageNumber=1&perPageSize=6 - - - 200 - application/json;+charset=utf-8 279.6851ms
+2023-05-08 21:06:06.724 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7003/api/book/recent?pageNumber=2&perPageSize=6 - -
+2023-05-08 21:06:06.725 +01:00 [DBG] 2 candidate(s) found for the request path '/api/book/recent'
+2023-05-08 21:06:06.726 +01:00 [DBG] Endpoint 'E_BOOK.API.Controllers.BookController.RecentBooks (E-BOOK.API)' with route pattern 'api/book/recent' is valid for the request path '/api/book/recent'
+2023-05-08 21:06:06.728 +01:00 [DBG] Endpoint 'E_BOOK.API.Controllers.BookController.GetBookById (E-BOOK.API)' with route pattern 'api/book/{id}' is valid for the request path '/api/book/recent'
+2023-05-08 21:06:06.732 +01:00 [DBG] Request matched endpoint 'E_BOOK.API.Controllers.BookController.RecentBooks (E-BOOK.API)'
+2023-05-08 21:06:06.735 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-05-08 21:06:06.736 +01:00 [DBG] AuthenticationScheme: Identity.Application was not authenticated.
+2023-05-08 21:06:06.740 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-05-08 21:06:06.741 +01:00 [INF] Executing endpoint 'E_BOOK.API.Controllers.BookController.RecentBooks (E-BOOK.API)'
+2023-05-08 21:06:06.744 +01:00 [INF] Route matched with {action = "RecentBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] RecentBooks(Int32, Int32) on controller E_BOOK.API.Controllers.BookController (E-BOOK.API).
+2023-05-08 21:06:06.750 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-05-08 21:06:06.751 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-05-08 21:06:06.755 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-05-08 21:06:06.759 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-05-08 21:06:06.760 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-05-08 21:06:06.762 +01:00 [DBG] Executing controller factory for controller E_BOOK.API.Controllers.BookController (E-BOOK.API)
+2023-05-08 21:06:06.764 +01:00 [DBG] Executed controller factory for controller E_BOOK.API.Controllers.BookController (E-BOOK.API)
+2023-05-08 21:06:06.765 +01:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' ...
+2023-05-08 21:06:06.769 +01:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' using the name 'pageNumber' in request data ...
+2023-05-08 21:06:06.770 +01:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-05-08 21:06:06.772 +01:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-05-08 21:06:06.774 +01:00 [DBG] Attempting to validate the bound parameter 'pageNumber' of type 'System.Int32' ...
+2023-05-08 21:06:06.775 +01:00 [DBG] Done attempting to validate the bound parameter 'pageNumber' of type 'System.Int32'.
+2023-05-08 21:06:06.777 +01:00 [DBG] Attempting to bind parameter 'perPageSize' of type 'System.Int32' ...
+2023-05-08 21:06:06.778 +01:00 [DBG] Attempting to bind parameter 'perPageSize' of type 'System.Int32' using the name 'perPageSize' in request data ...
+2023-05-08 21:06:06.780 +01:00 [DBG] Done attempting to bind parameter 'perPageSize' of type 'System.Int32'.
+2023-05-08 21:06:06.782 +01:00 [DBG] Done attempting to bind parameter 'perPageSize' of type 'System.Int32'.
+2023-05-08 21:06:06.784 +01:00 [DBG] Attempting to validate the bound parameter 'perPageSize' of type 'System.Int32' ...
+2023-05-08 21:06:06.785 +01:00 [DBG] Done attempting to validate the bound parameter 'perPageSize' of type 'System.Int32'.
+2023-05-08 21:06:06.787 +01:00 [INF] Entity Framework Core 6.0.1 initialized 'E_BookDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.1' with options: None
+2023-05-08 21:06:06.791 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-05-08 21:06:06.792 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2023-05-08 21:06:06.793 +01:00 [DBG] Opening connection to database 'main' on server 'E-Book.db'.
+2023-05-08 21:06:06.795 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\bsahe\source\repos\updateGroupb\E-BOOK-LIBRARY(GROUPB)\E-BOOK.API\E-Book.db'.
+2023-05-08 21:06:06.797 +01:00 [DBG] Executing DbCommand [Parameters=[@__OneWeekAgo_0='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."AddedToLib", "b"."AppUserId", "b"."Author", "b"."BookImg", "b"."Description", "b"."ISBN", "b"."NoPage", "b"."Publisher", "b"."PublisherDate", "b"."Rating", "b"."Title", "b"."ViewBook"
+FROM "Books" AS "b"
+WHERE "b"."AddedToLib" >= @__OneWeekAgo_0
+ORDER BY "b"."AddedToLib" DESC
+2023-05-08 21:06:06.800 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__OneWeekAgo_0='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."AddedToLib", "b"."AppUserId", "b"."Author", "b"."BookImg", "b"."Description", "b"."ISBN", "b"."NoPage", "b"."Publisher", "b"."PublisherDate", "b"."Rating", "b"."Title", "b"."ViewBook"
+FROM "Books" AS "b"
+WHERE "b"."AddedToLib" >= @__OneWeekAgo_0
+ORDER BY "b"."AddedToLib" DESC
+2023-05-08 21:06:06.803 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:06.805 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:06.806 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:06.807 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:06.808 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:06.810 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:06.811 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:06.812 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:06.814 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:06.816 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:06.818 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:06.820 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:06:06.821 +01:00 [DBG] A data reader was disposed.
+2023-05-08 21:06:06.822 +01:00 [DBG] Closing connection to database 'main' on server 'C:\Users\bsahe\source\repos\updateGroupb\E-BOOK-LIBRARY(GROUPB)\E-BOOK.API\E-Book.db'.
+2023-05-08 21:06:06.823 +01:00 [DBG] Closed connection to database 'main' on server 'E-Book.db'.
+2023-05-08 21:06:06.824 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-05-08 21:06:06.827 +01:00 [DBG] No information found on request to perform content negotiation.
+2023-05-08 21:06:06.829 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-05-08 21:06:06.830 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-05-08 21:06:06.831 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-05-08 21:06:06.833 +01:00 [INF] Executing OkObjectResult, writing value of type 'MODEL.DTO.PaginatedBooks'.
+2023-05-08 21:06:06.836 +01:00 [INF] Executed action E_BOOK.API.Controllers.BookController.RecentBooks (E-BOOK.API) in 73.6696ms
+2023-05-08 21:06:06.837 +01:00 [INF] Executed endpoint 'E_BOOK.API.Controllers.BookController.RecentBooks (E-BOOK.API)'
+2023-05-08 21:06:06.838 +01:00 [DBG] Connection id "0HMQFVUIM5K6V" completed keep alive response.
+2023-05-08 21:06:06.840 +01:00 [DBG] 'E_BookDbContext' disposed.
+2023-05-08 21:06:06.841 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7003/api/book/recent?pageNumber=2&perPageSize=6 - - - 200 - application/json;+charset=utf-8 117.3081ms
+2023-05-08 21:07:15.807 +01:00 [DBG] Connection id "0HMQFVUIM5K6V" received FIN.
+2023-05-08 21:07:15.812 +01:00 [DBG] Connection id "0HMQFVUIM5K6V" sending FIN because: "The client closed the connection."
+2023-05-08 21:07:15.815 +01:00 [DBG] Connection id "0HMQFVUIM5K6V" disconnecting.
+2023-05-08 21:07:15.821 +01:00 [DBG] Connection id "0HMQFVUIM5K6V" stopped.
+2023-05-08 21:07:15.916 +01:00 [DBG] Connection id "0HMQFVUIM5K70" received FIN.
+2023-05-08 21:07:15.919 +01:00 [DBG] Connection id "0HMQFVUIM5K70" sending FIN because: "The client closed the connection."
+2023-05-08 21:07:15.921 +01:00 [DBG] Connection id "0HMQFVUIM5K70" disconnecting.
+2023-05-08 21:07:15.923 +01:00 [DBG] Connection id "0HMQFVUIM5K70" stopped.
+2023-05-08 21:27:26.849 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-05-08 21:27:27.177 +01:00 [DBG] Hosting starting
+2023-05-08 21:27:27.223 +01:00 [INF] User profile is available. Using 'C:\Users\bsahe\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-08 21:27:27.241 +01:00 [DBG] Reading data from file 'C:\Users\bsahe\AppData\Local\ASP.NET\DataProtection-Keys\key-ae05be0e-0a9c-48bc-ac3a-d7d82fd26ba0.xml'.
+2023-05-08 21:27:27.272 +01:00 [DBG] Found key {ae05be0e-0a9c-48bc-ac3a-d7d82fd26ba0}.
+2023-05-08 21:27:27.303 +01:00 [DBG] Considering key {ae05be0e-0a9c-48bc-ac3a-d7d82fd26ba0} with expiration date 2023-06-21 23:35:22Z as default key.
+2023-05-08 21:27:27.308 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-05-08 21:27:27.318 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2023-05-08 21:27:27.325 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-05-08 21:27:27.338 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2023-05-08 21:27:27.346 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2023-05-08 21:27:27.362 +01:00 [DBG] Using key {ae05be0e-0a9c-48bc-ac3a-d7d82fd26ba0} as the default key.
+2023-05-08 21:27:27.365 +01:00 [DBG] Key ring with default key {ae05be0e-0a9c-48bc-ac3a-d7d82fd26ba0} was loaded during application startup.
+2023-05-08 21:27:27.546 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 00D5B8A748A32CF248CC35D3C1B514BD27DFD320)
+2023-05-08 21:27:27.676 +01:00 [INF] Now listening on: https://localhost:7003
+2023-05-08 21:27:27.678 +01:00 [INF] Now listening on: http://localhost:5184
+2023-05-08 21:27:27.680 +01:00 [DBG] Loaded hosting startup assembly E-BOOK.API
+2023-05-08 21:27:27.680 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-05-08 21:27:27.710 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-05-08 21:27:27.711 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-08 21:27:27.713 +01:00 [INF] Hosting environment: Development
+2023-05-08 21:27:27.714 +01:00 [INF] Content root path: C:\Users\bsahe\source\repos\updateGroupb\E-BOOK-LIBRARY(GROUPB)\E-BOOK.API\
+2023-05-08 21:27:27.716 +01:00 [DBG] Hosting started
+2023-05-08 21:27:27.759 +01:00 [DBG] Connection id "0HMQG0AI2ORTC" received FIN.
+2023-05-08 21:27:27.759 +01:00 [DBG] Connection id "0HMQG0AI2ORTD" received FIN.
+2023-05-08 21:27:27.773 +01:00 [DBG] Connection id "0HMQG0AI2ORTC" accepted.
+2023-05-08 21:27:27.773 +01:00 [DBG] Connection id "0HMQG0AI2ORTD" accepted.
+2023-05-08 21:27:27.776 +01:00 [DBG] Connection id "0HMQG0AI2ORTC" started.
+2023-05-08 21:27:27.776 +01:00 [DBG] Connection id "0HMQG0AI2ORTD" started.
+2023-05-08 21:27:27.810 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-08 21:27:27.810 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-08 21:27:27.892 +01:00 [DBG] Connection id "0HMQG0AI2ORTD" stopped.
+2023-05-08 21:27:27.892 +01:00 [DBG] Connection id "0HMQG0AI2ORTC" stopped.
+2023-05-08 21:27:27.898 +01:00 [DBG] Connection id "0HMQG0AI2ORTC" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-08 21:27:27.898 +01:00 [DBG] Connection id "0HMQG0AI2ORTD" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-08 21:27:28.191 +01:00 [DBG] Connection id "0HMQG0AI2ORTE" accepted.
+2023-05-08 21:27:28.580 +01:00 [DBG] Connection id "0HMQG0AI2ORTE" started.
+2023-05-08 21:27:28.683 +01:00 [DBG] Connection 0HMQG0AI2ORTE established using the following protocol: "Tls13"
+2023-05-08 21:27:28.819 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/index.html - -
+2023-05-08 21:27:28.894 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-05-08 21:27:28.993 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-05-08 21:27:28.996 +01:00 [DBG] Request did not match any endpoints
+2023-05-08 21:27:29.235 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-05-08 21:27:29.441 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-05-08 21:27:29.460 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/index.html - - - 200 - text/html;charset=utf-8 650.4922ms
+2023-05-08 21:27:29.462 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7003/_framework/aspnetcore-browser-refresh.js - -
+2023-05-08 21:27:29.517 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7003/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 55.3028ms
+2023-05-08 21:27:29.572 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7003/_vs/browserLink - -
+2023-05-08 21:27:29.709 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7003/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 136.3485ms
+2023-05-08 21:27:30.031 +01:00 [DBG] Connection id "0HMQG0AI2ORTE" received FIN.
+2023-05-08 21:27:30.080 +01:00 [DBG] Connection id "0HMQG0AI2ORTE" is closed. The last processed stream ID was 5.
+2023-05-08 21:27:30.082 +01:00 [DBG] Connection id "0HMQG0AI2ORTE" sending FIN because: "The client closed the connection."
+2023-05-08 21:27:30.089 +01:00 [DBG] Connection id "0HMQG0AI2ORTE" stopped.
+2023-05-08 21:27:30.478 +01:00 [DBG] Connection id "0HMQG0AI2ORTF" accepted.
+2023-05-08 21:27:30.480 +01:00 [DBG] Connection id "0HMQG0AI2ORTF" started.
+2023-05-08 21:27:30.486 +01:00 [DBG] Connection 0HMQG0AI2ORTF established using the following protocol: "Tls13"
+2023-05-08 21:27:30.491 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/v1/swagger.json - -
+2023-05-08 21:27:30.495 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-05-08 21:27:30.497 +01:00 [DBG] Request did not match any endpoints
+2023-05-08 21:27:30.884 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 393.3726ms
+2023-05-08 21:27:40.031 +01:00 [DBG] Connection id "0HMQG0AI2ORTF" received FIN.
+2023-05-08 21:27:40.033 +01:00 [DBG] Connection id "0HMQG0AI2ORTF" is closed. The last processed stream ID was 1.
+2023-05-08 21:27:40.039 +01:00 [DBG] Connection id "0HMQG0AI2ORTF" sending FIN because: "The client closed the connection."
+2023-05-08 21:27:40.050 +01:00 [DBG] Connection id "0HMQG0AI2ORTF" stopped.
+2023-05-08 21:27:40.947 +01:00 [DBG] Connection id "0HMQG0AI2ORTG" accepted.
+2023-05-08 21:27:40.951 +01:00 [DBG] Connection id "0HMQG0AI2ORTG" started.
+2023-05-08 21:27:40.965 +01:00 [DBG] Connection 0HMQG0AI2ORTG established using the following protocol: "Tls13"
+2023-05-08 21:27:40.973 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7003/api/book/test - -
+2023-05-08 21:27:40.988 +01:00 [DBG] 2 candidate(s) found for the request path '/api/book/test'
+2023-05-08 21:27:41.001 +01:00 [DBG] Endpoint 'E_BOOK.API.Controllers.BookController.SampleTest (E-BOOK.API)' with route pattern 'api/book/test' is valid for the request path '/api/book/test'
+2023-05-08 21:27:41.007 +01:00 [DBG] Endpoint 'E_BOOK.API.Controllers.BookController.GetBookById (E-BOOK.API)' with route pattern 'api/book/{id}' is valid for the request path '/api/book/test'
+2023-05-08 21:27:41.009 +01:00 [DBG] Request matched endpoint 'E_BOOK.API.Controllers.BookController.SampleTest (E-BOOK.API)'
+2023-05-08 21:27:41.012 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-05-08 21:27:41.028 +01:00 [DBG] AuthenticationScheme: Identity.Application was not authenticated.
+2023-05-08 21:27:41.083 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-05-08 21:27:41.087 +01:00 [INF] Executing endpoint 'E_BOOK.API.Controllers.BookController.SampleTest (E-BOOK.API)'
+2023-05-08 21:27:41.128 +01:00 [INF] Route matched with {action = "SampleTest", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SampleTest() on controller E_BOOK.API.Controllers.BookController (E-BOOK.API).
+2023-05-08 21:27:41.132 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-05-08 21:27:41.134 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-05-08 21:27:41.136 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-05-08 21:27:41.139 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-05-08 21:27:41.141 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-05-08 21:27:41.145 +01:00 [DBG] Executing controller factory for controller E_BOOK.API.Controllers.BookController (E-BOOK.API)
+2023-05-08 21:27:41.389 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-05-08 21:27:41.450 +01:00 [DBG] Executed controller factory for controller E_BOOK.API.Controllers.BookController (E-BOOK.API)
+2023-05-08 21:27:42.441 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<string>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2023-05-08 21:27:42.443 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<string>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2023-05-08 21:27:43.296 +01:00 [INF] Entity Framework Core 6.0.1 initialized 'E_BookDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.1' with options: None
+2023-05-08 21:27:43.446 +01:00 [DBG] Compiling query expression: 
+'DbSet<Book>()
+    .Include(r => r.Reviews)'
+2023-05-08 21:27:43.564 +01:00 [DBG] Including navigation: 'Book.Reviews'.
+2023-05-08 21:27:43.892 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Book>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: Book.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Book.AddedToLib (DateTime) Required, 1], [Property: Book.AppUserId (string) Required FK Index, 2], [Property: Book.Author (string) Required, 3], [Property: Book.BookImg (string) Required, 4], [Property: Book.Description (string) Required, 5], [Property: Book.ISBN (string) Required, 6], [Property: Book.NoPage (int) Required, 7], [Property: Book.Publisher (string) Required, 8], [Property: Book.PublisherDate (DateTime) Required, 9], [Property: Book.Rating (double) Required, 10], [Property: Book.Title (string) Required, 11], [Property: Book.ViewBook (int) Required, 12] }
+            1 -> 0
+            2 -> Dictionary<IProperty, int> { [Property: Review.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 13], [Property: Review.AppUserId (string) Required FK Index, 14], [Property: Review.BookId (int) Required FK Index, 15], [Property: Review.Comment (string) Required, 16], [Property: Review.DateCreated (DateTime) Required, 17], [Property: Review.Rating (int) Required, 18], [Property: Review.Title (string) Required, 19] }
+            3 -> 13
+        SELECT b.Id, b.AddedToLib, b.AppUserId, b.Author, b.BookImg, b.Description, b.ISBN, b.NoPage, b.Publisher, b.PublisherDate, b.Rating, b.Title, b.ViewBook, r.Id, r.AppUserId, r.BookId, r.Comment, r.DateCreated, r.Rating, r.Title
+        FROM Books AS b
+        LEFT JOIN Reviews AS r ON b.Id == r.BookId
+        ORDER BY b.Id ASC), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Book>, 
+    MODEL.E_BookDbContext, 
+    False, 
+    False, 
+    True
+)'
+2023-05-08 21:27:43.964 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-05-08 21:27:44.027 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (63ms).
+2023-05-08 21:27:44.039 +01:00 [DBG] Opening connection to database 'main' on server 'E-Book.db'.
+2023-05-08 21:27:44.068 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\bsahe\source\repos\updateGroupb\E-BOOK-LIBRARY(GROUPB)\E-BOOK.API\E-Book.db'.
+2023-05-08 21:27:44.088 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."AddedToLib", "b"."AppUserId", "b"."Author", "b"."BookImg", "b"."Description", "b"."ISBN", "b"."NoPage", "b"."Publisher", "b"."PublisherDate", "b"."Rating", "b"."Title", "b"."ViewBook", "r"."Id", "r"."AppUserId", "r"."BookId", "r"."Comment", "r"."DateCreated", "r"."Rating", "r"."Title"
+FROM "Books" AS "b"
+LEFT JOIN "Reviews" AS "r" ON "b"."Id" = "r"."BookId"
+ORDER BY "b"."Id"
+2023-05-08 21:27:44.158 +01:00 [INF] Executed DbCommand (73ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."AddedToLib", "b"."AppUserId", "b"."Author", "b"."BookImg", "b"."Description", "b"."ISBN", "b"."NoPage", "b"."Publisher", "b"."PublisherDate", "b"."Rating", "b"."Title", "b"."ViewBook", "r"."Id", "r"."AppUserId", "r"."BookId", "r"."Comment", "r"."DateCreated", "r"."Rating", "r"."Title"
+FROM "Books" AS "b"
+LEFT JOIN "Reviews" AS "r" ON "b"."Id" = "r"."BookId"
+ORDER BY "b"."Id"
+2023-05-08 21:27:44.205 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:27:44.301 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:27:44.305 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:27:44.308 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:27:44.310 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:27:44.311 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:27:44.313 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:27:44.315 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:27:44.317 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:27:44.319 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:27:44.321 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:27:44.326 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Review' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:27:44.374 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Review' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:27:44.378 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:27:44.394 +01:00 [DBG] A data reader was disposed.
+2023-05-08 21:27:44.402 +01:00 [DBG] Closing connection to database 'main' on server 'C:\Users\bsahe\source\repos\updateGroupb\E-BOOK-LIBRARY(GROUPB)\E-BOOK.API\E-Book.db'.
+2023-05-08 21:27:44.416 +01:00 [DBG] Closed connection to database 'main' on server 'E-Book.db'.
+2023-05-08 21:27:44.433 +01:00 [INF] Executed action E_BOOK.API.Controllers.BookController.SampleTest (E-BOOK.API) in 3283.3689ms
+2023-05-08 21:27:44.438 +01:00 [INF] Executed endpoint 'E_BOOK.API.Controllers.BookController.SampleTest (E-BOOK.API)'
+2023-05-08 21:27:44.441 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.DivideByZeroException: Attempted to divide by zero.
+   at E_BOOK.API.Controllers.BookController.SampleTest() in C:\Users\bsahe\source\repos\updateGroupb\E-BOOK-LIBRARY(GROUPB)\E-BOOK.API\Controllers\BookController.cs:line 36
+   at lambda_method5(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-05-08 21:27:44.507 +01:00 [DBG] 'E_BookDbContext' disposed.
+2023-05-08 21:27:44.512 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7003/api/book/test - - - 500 - text/plain;+charset=utf-8 3538.7455ms
+2023-05-08 21:27:50.050 +01:00 [DBG] Connection id "0HMQG0AI2ORTG" received FIN.
+2023-05-08 21:27:50.052 +01:00 [DBG] Connection id "0HMQG0AI2ORTG" is closed. The last processed stream ID was 1.
+2023-05-08 21:27:50.056 +01:00 [DBG] Connection id "0HMQG0AI2ORTG" sending FIN because: "The client closed the connection."
+2023-05-08 21:27:50.065 +01:00 [DBG] Connection id "0HMQG0AI2ORTG" stopped.
+2023-05-08 21:29:23.073 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-05-08 21:29:23.399 +01:00 [DBG] Hosting starting
+2023-05-08 21:29:23.448 +01:00 [INF] User profile is available. Using 'C:\Users\bsahe\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-08 21:29:23.457 +01:00 [DBG] Reading data from file 'C:\Users\bsahe\AppData\Local\ASP.NET\DataProtection-Keys\key-ae05be0e-0a9c-48bc-ac3a-d7d82fd26ba0.xml'.
+2023-05-08 21:29:23.519 +01:00 [DBG] Found key {ae05be0e-0a9c-48bc-ac3a-d7d82fd26ba0}.
+2023-05-08 21:29:23.643 +01:00 [DBG] Considering key {ae05be0e-0a9c-48bc-ac3a-d7d82fd26ba0} with expiration date 2023-06-21 23:35:22Z as default key.
+2023-05-08 21:29:23.681 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-05-08 21:29:23.719 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2023-05-08 21:29:23.730 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-05-08 21:29:23.740 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2023-05-08 21:29:23.772 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2023-05-08 21:29:23.782 +01:00 [DBG] Using key {ae05be0e-0a9c-48bc-ac3a-d7d82fd26ba0} as the default key.
+2023-05-08 21:29:23.810 +01:00 [DBG] Key ring with default key {ae05be0e-0a9c-48bc-ac3a-d7d82fd26ba0} was loaded during application startup.
+2023-05-08 21:29:24.058 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 00D5B8A748A32CF248CC35D3C1B514BD27DFD320)
+2023-05-08 21:29:24.188 +01:00 [INF] Now listening on: https://localhost:7003
+2023-05-08 21:29:24.213 +01:00 [INF] Now listening on: http://localhost:5184
+2023-05-08 21:29:24.338 +01:00 [DBG] Loaded hosting startup assembly E-BOOK.API
+2023-05-08 21:29:24.382 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-05-08 21:29:24.387 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-05-08 21:29:24.390 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-08 21:29:24.393 +01:00 [INF] Hosting environment: Development
+2023-05-08 21:29:24.399 +01:00 [INF] Content root path: C:\Users\bsahe\source\repos\updateGroupb\E-BOOK-LIBRARY(GROUPB)\E-BOOK.API\
+2023-05-08 21:29:24.435 +01:00 [DBG] Hosting started
+2023-05-08 21:29:24.501 +01:00 [DBG] Connection id "0HMQG0BKS2IVO" accepted.
+2023-05-08 21:29:24.503 +01:00 [DBG] Connection id "0HMQG0BKS2IVO" started.
+2023-05-08 21:29:24.533 +01:00 [DBG] Connection id "0HMQG0BKS2IVO" received FIN.
+2023-05-08 21:29:24.596 +01:00 [DBG] Connection id "0HMQG0BKS2IVP" accepted.
+2023-05-08 21:29:24.613 +01:00 [DBG] Connection id "0HMQG0BKS2IVP" started.
+2023-05-08 21:29:24.661 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-08 21:29:24.937 +01:00 [DBG] Connection id "0HMQG0BKS2IVO" stopped.
+2023-05-08 21:29:24.939 +01:00 [DBG] Connection 0HMQG0BKS2IVP established using the following protocol: "Tls13"
+2023-05-08 21:29:24.949 +01:00 [DBG] Connection id "0HMQG0BKS2IVO" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-08 21:29:25.078 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/index.html - -
+2023-05-08 21:29:25.315 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-05-08 21:29:25.635 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-05-08 21:29:25.648 +01:00 [DBG] Request did not match any endpoints
+2023-05-08 21:29:26.139 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-05-08 21:29:26.824 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-05-08 21:29:26.831 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/index.html - - - 200 - text/html;charset=utf-8 1761.3276ms
+2023-05-08 21:29:26.850 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7003/_framework/aspnetcore-browser-refresh.js - -
+2023-05-08 21:29:26.850 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7003/_vs/browserLink - -
+2023-05-08 21:29:26.857 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7003/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 6.6883ms
+2023-05-08 21:29:26.895 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7003/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 45.2161ms
+2023-05-08 21:29:27.174 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/v1/swagger.json - -
+2023-05-08 21:29:27.180 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-05-08 21:29:27.247 +01:00 [DBG] Request did not match any endpoints
+2023-05-08 21:29:27.676 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 501.5375ms
+2023-05-08 21:29:30.224 +01:00 [DBG] Connection id "0HMQG0BKS2IVP" received FIN.
+2023-05-08 21:29:30.253 +01:00 [DBG] Connection id "0HMQG0BKS2IVP" is closed. The last processed stream ID was 7.
+2023-05-08 21:29:30.298 +01:00 [DBG] Connection id "0HMQG0BKS2IVP" sending FIN because: "The client closed the connection."
+2023-05-08 21:29:30.308 +01:00 [DBG] Connection id "0HMQG0BKS2IVP" stopped.
+2023-05-08 21:29:38.509 +01:00 [DBG] Connection id "0HMQG0BKS2IVQ" accepted.
+2023-05-08 21:29:38.511 +01:00 [DBG] Connection id "0HMQG0BKS2IVQ" started.
+2023-05-08 21:29:38.518 +01:00 [DBG] Connection 0HMQG0BKS2IVQ established using the following protocol: "Tls13"
+2023-05-08 21:29:38.521 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7003/api/book/test - -
+2023-05-08 21:29:38.538 +01:00 [DBG] 2 candidate(s) found for the request path '/api/book/test'
+2023-05-08 21:29:38.549 +01:00 [DBG] Endpoint 'E_BOOK.API.Controllers.BookController.SampleTest (E-BOOK.API)' with route pattern 'api/book/test' is valid for the request path '/api/book/test'
+2023-05-08 21:29:38.555 +01:00 [DBG] Endpoint 'E_BOOK.API.Controllers.BookController.GetBookById (E-BOOK.API)' with route pattern 'api/book/{id}' is valid for the request path '/api/book/test'
+2023-05-08 21:29:38.557 +01:00 [DBG] Request matched endpoint 'E_BOOK.API.Controllers.BookController.SampleTest (E-BOOK.API)'
+2023-05-08 21:29:38.559 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-05-08 21:29:38.583 +01:00 [DBG] AuthenticationScheme: Identity.Application was not authenticated.
+2023-05-08 21:29:38.640 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-05-08 21:29:38.643 +01:00 [INF] Executing endpoint 'E_BOOK.API.Controllers.BookController.SampleTest (E-BOOK.API)'
+2023-05-08 21:29:38.696 +01:00 [INF] Route matched with {action = "SampleTest", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SampleTest() on controller E_BOOK.API.Controllers.BookController (E-BOOK.API).
+2023-05-08 21:29:38.704 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-05-08 21:29:38.709 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-05-08 21:29:38.711 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-05-08 21:29:38.713 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-05-08 21:29:38.715 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-05-08 21:29:38.724 +01:00 [DBG] Executing controller factory for controller E_BOOK.API.Controllers.BookController (E-BOOK.API)
+2023-05-08 21:29:38.950 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-05-08 21:29:39.032 +01:00 [DBG] Executed controller factory for controller E_BOOK.API.Controllers.BookController (E-BOOK.API)
+2023-05-08 21:29:40.144 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<string>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2023-05-08 21:29:40.152 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<string>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2023-05-08 21:29:40.958 +01:00 [INF] Entity Framework Core 6.0.1 initialized 'E_BookDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.1' with options: None
+2023-05-08 21:29:41.078 +01:00 [DBG] Compiling query expression: 
+'DbSet<Book>()
+    .Include(r => r.Reviews)
+    .Where(x => x.Reviews
+        .Any())'
+2023-05-08 21:29:41.301 +01:00 [DBG] Including navigation: 'Book.Reviews'.
+2023-05-08 21:29:41.714 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Book>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: Book.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Book.AddedToLib (DateTime) Required, 1], [Property: Book.AppUserId (string) Required FK Index, 2], [Property: Book.Author (string) Required, 3], [Property: Book.BookImg (string) Required, 4], [Property: Book.Description (string) Required, 5], [Property: Book.ISBN (string) Required, 6], [Property: Book.NoPage (int) Required, 7], [Property: Book.Publisher (string) Required, 8], [Property: Book.PublisherDate (DateTime) Required, 9], [Property: Book.Rating (double) Required, 10], [Property: Book.Title (string) Required, 11], [Property: Book.ViewBook (int) Required, 12] }
+            1 -> 0
+            2 -> Dictionary<IProperty, int> { [Property: Review.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 13], [Property: Review.AppUserId (string) Required FK Index, 14], [Property: Review.BookId (int) Required FK Index, 15], [Property: Review.Comment (string) Required, 16], [Property: Review.DateCreated (DateTime) Required, 17], [Property: Review.Rating (int) Required, 18], [Property: Review.Title (string) Required, 19] }
+            3 -> 13
+        SELECT b.Id, b.AddedToLib, b.AppUserId, b.Author, b.BookImg, b.Description, b.ISBN, b.NoPage, b.Publisher, b.PublisherDate, b.Rating, b.Title, b.ViewBook, r0.Id, r0.AppUserId, r0.BookId, r0.Comment, r0.DateCreated, r0.Rating, r0.Title
+        FROM Books AS b
+        LEFT JOIN Reviews AS r0 ON b.Id == r0.BookId
+        WHERE EXISTS (
+            SELECT 1
+            FROM Reviews AS r
+            WHERE (b.Id != NULL) && (b.Id == r.BookId))
+        ORDER BY b.Id ASC), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Book>, 
+    MODEL.E_BookDbContext, 
+    False, 
+    False, 
+    True
+)'
+2023-05-08 21:29:41.818 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-05-08 21:29:41.901 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (82ms).
+2023-05-08 21:29:41.925 +01:00 [DBG] Opening connection to database 'main' on server 'E-Book.db'.
+2023-05-08 21:29:41.972 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\bsahe\source\repos\updateGroupb\E-BOOK-LIBRARY(GROUPB)\E-BOOK.API\E-Book.db'.
+2023-05-08 21:29:41.993 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."AddedToLib", "b"."AppUserId", "b"."Author", "b"."BookImg", "b"."Description", "b"."ISBN", "b"."NoPage", "b"."Publisher", "b"."PublisherDate", "b"."Rating", "b"."Title", "b"."ViewBook", "r0"."Id", "r0"."AppUserId", "r0"."BookId", "r0"."Comment", "r0"."DateCreated", "r0"."Rating", "r0"."Title"
+FROM "Books" AS "b"
+LEFT JOIN "Reviews" AS "r0" ON "b"."Id" = "r0"."BookId"
+WHERE EXISTS (
+    SELECT 1
+    FROM "Reviews" AS "r"
+    WHERE "b"."Id" = "r"."BookId")
+ORDER BY "b"."Id"
+2023-05-08 21:29:42.057 +01:00 [INF] Executed DbCommand (67ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."AddedToLib", "b"."AppUserId", "b"."Author", "b"."BookImg", "b"."Description", "b"."ISBN", "b"."NoPage", "b"."Publisher", "b"."PublisherDate", "b"."Rating", "b"."Title", "b"."ViewBook", "r0"."Id", "r0"."AppUserId", "r0"."BookId", "r0"."Comment", "r0"."DateCreated", "r0"."Rating", "r0"."Title"
+FROM "Books" AS "b"
+LEFT JOIN "Reviews" AS "r0" ON "b"."Id" = "r0"."BookId"
+WHERE EXISTS (
+    SELECT 1
+    FROM "Reviews" AS "r"
+    WHERE "b"."Id" = "r"."BookId")
+ORDER BY "b"."Id"
+2023-05-08 21:29:42.097 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:29:42.210 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Review' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:29:42.260 +01:00 [DBG] Context 'E_BookDbContext' started tracking 'Review' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:29:42.283 +01:00 [DBG] A data reader was disposed.
+2023-05-08 21:29:42.289 +01:00 [DBG] Closing connection to database 'main' on server 'C:\Users\bsahe\source\repos\updateGroupb\E-BOOK-LIBRARY(GROUPB)\E-BOOK.API\E-Book.db'.
+2023-05-08 21:29:42.304 +01:00 [DBG] Closed connection to database 'main' on server 'E-Book.db'.
+2023-05-08 21:29:42.330 +01:00 [DBG] An entity of type 'Book' tracked by 'E_BookDbContext' changed state from '"Unchanged"' to '"Modified"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:29:42.339 +01:00 [DBG] SaveChanges starting for 'E_BookDbContext'.
+2023-05-08 21:29:42.342 +01:00 [DBG] DetectChanges starting for 'E_BookDbContext'.
+2023-05-08 21:29:42.377 +01:00 [DBG] DetectChanges completed for 'E_BookDbContext'.
+2023-05-08 21:29:42.422 +01:00 [DBG] Opening connection to database 'main' on server 'E-Book.db'.
+2023-05-08 21:29:42.438 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\bsahe\source\repos\updateGroupb\E-BOOK-LIBRARY(GROUPB)\E-BOOK.API\E-Book.db'.
+2023-05-08 21:29:42.445 +01:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2023-05-08 21:29:42.465 +01:00 [DBG] Began transaction with isolation level 'Serializable'.
+2023-05-08 21:29:42.593 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-05-08 21:29:42.595 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2023-05-08 21:29:42.606 +01:00 [DBG] Executing DbCommand [Parameters=[@p12='?' (DbType = Int32), @p0='?' (DbType = DateTime), @p1='?' (Size = 36), @p2='?' (Size = 6), @p3='?' (Size = 67), @p4='?' (Size = 6), @p5='?' (Size = 6), @p6='?' (DbType = Int32), @p7='?' (Size = 6), @p8='?' (DbType = DateTime), @p9='?' (DbType = Double), @p10='?' (Size = 6), @p11='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Books" SET "AddedToLib" = @p0, "AppUserId" = @p1, "Author" = @p2, "BookImg" = @p3, "Description" = @p4, "ISBN" = @p5, "NoPage" = @p6, "Publisher" = @p7, "PublisherDate" = @p8, "Rating" = @p9, "Title" = @p10, "ViewBook" = @p11
+WHERE "Id" = @p12;
+SELECT changes();
+2023-05-08 21:29:42.623 +01:00 [INF] Executed DbCommand (23ms) [Parameters=[@p12='?' (DbType = Int32), @p0='?' (DbType = DateTime), @p1='?' (Size = 36), @p2='?' (Size = 6), @p3='?' (Size = 67), @p4='?' (Size = 6), @p5='?' (Size = 6), @p6='?' (DbType = Int32), @p7='?' (Size = 6), @p8='?' (DbType = DateTime), @p9='?' (DbType = Double), @p10='?' (Size = 6), @p11='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Books" SET "AddedToLib" = @p0, "AppUserId" = @p1, "Author" = @p2, "BookImg" = @p3, "Description" = @p4, "ISBN" = @p5, "NoPage" = @p6, "Publisher" = @p7, "PublisherDate" = @p8, "Rating" = @p9, "Title" = @p10, "ViewBook" = @p11
+WHERE "Id" = @p12;
+SELECT changes();
+2023-05-08 21:29:42.641 +01:00 [DBG] A data reader was disposed.
+2023-05-08 21:29:42.646 +01:00 [DBG] Committing transaction.
+2023-05-08 21:29:42.655 +01:00 [DBG] Committed transaction.
+2023-05-08 21:29:42.663 +01:00 [DBG] Closing connection to database 'main' on server 'C:\Users\bsahe\source\repos\updateGroupb\E-BOOK-LIBRARY(GROUPB)\E-BOOK.API\E-Book.db'.
+2023-05-08 21:29:42.672 +01:00 [DBG] Closed connection to database 'main' on server 'E-Book.db'.
+2023-05-08 21:29:42.677 +01:00 [DBG] Disposing transaction.
+2023-05-08 21:29:42.688 +01:00 [DBG] An entity of type 'Book' tracked by 'E_BookDbContext' changed state from '"Modified"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-08 21:29:42.696 +01:00 [DBG] SaveChanges completed for 'E_BookDbContext' with 1 entities written to the database.
+2023-05-08 21:29:42.713 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-05-08 21:29:42.732 +01:00 [INF] Executed action E_BOOK.API.Controllers.BookController.SampleTest (E-BOOK.API) in 3999.6596ms
+2023-05-08 21:29:42.740 +01:00 [INF] Executed endpoint 'E_BOOK.API.Controllers.BookController.SampleTest (E-BOOK.API)'
+2023-05-08 21:29:42.747 +01:00 [DBG] 'E_BookDbContext' disposed.
+2023-05-08 21:29:42.755 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7003/api/book/test - - - 200 0 - 4234.4175ms
+2023-05-08 21:29:45.229 +01:00 [DBG] Connection id "0HMQG0BKS2IVQ" received FIN.
+2023-05-08 21:29:45.230 +01:00 [DBG] Connection id "0HMQG0BKS2IVQ" is closed. The last processed stream ID was 1.
+2023-05-08 21:29:45.231 +01:00 [DBG] Connection id "0HMQG0BKS2IVQ" sending FIN because: "The client closed the connection."
+2023-05-08 21:29:45.237 +01:00 [DBG] Connection id "0HMQG0BKS2IVQ" stopped.

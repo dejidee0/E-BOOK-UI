@@ -1,0 +1,59 @@
+﻿@page "/create_book/{userid}"
+<div class="shadow-sm p-5 rounded-3 cusgap">
+    <EditForm Model="@_book" OnSubmit="HandleBook" class="d-flex flex-column cusgap">
+        <DataAnnotationsValidator />
+        <div class="d-flex gap-4 flex-column">
+            <div class="form-row d-flex gap-2">
+                <div class="form-group col-6">
+                    <label for="title">Book Title</label>
+                    <InputText id="title" class="form-control" placeholder="Please enter your book title" @bind-Value="_book.Title" />
+                    <ValidationMessage For="@(()=>_book.Title)" />
+                </div>
+                <div class="form-group col-6">
+                    <label for="auth">Author</label>
+                    <InputText id="auth" class="form-control" placeholder="Author name" @bind-Value="_book.Author" />
+                    <ValidationMessage For="@(()=>_book.Author)" />
+                </div>
+            </div>
+            <div class="form-group col-12">
+                <label for="pages">No of Pages</label>
+                <InputNumber id="pages" @bind-Value="_book.NoPage" class="form-control"/>
+                <ValidationMessage For="@(()=>_book.NoPage)" />
+            </div>
+            <div class="form-row d-flex gap-2">
+                <div class="form-group col-6">
+                    <label for="isbn">ISBN</label>
+                    <InputText id="isbn" class="form-control" placeholder="ISBN" @bind-Value="_book.ISBN" />
+                    <ValidationMessage For="@(()=>_book.ISBN)" />
+                </div>
+                <div class="form-group col-6">
+                    <label for="pub">Publisher</label>
+                    <InputText id="pub" class="form-control" placeholder="Publisher" @bind-Value="_book.Publisher" />
+                    <ValidationMessage For="@(()=>_book.Publisher)" />
+                </div>
+            </div>
+            <div class="form-group col-12">
+                <label for="pages">No of Pages</label>
+                <InputText id="pages" @bind-Value="_book.Description" class="form-control" />
+                <ValidationMessage For="@(()=>_book.Description)" />
+            </div>
+            <div class="form-row d-flex gap-2">
+                <div class="form-group col-6">
+                    <label for="dat">Date Added to library</label>
+                    <InputDate id="dat" class="form-control"  @bind-Value="_book.AddedToLib" />
+                    <ValidationMessage For="@(()=>_book.AddedToLib)" />
+                </div>
+                <div class="form-group col-6">
+                    <label for="pub">Published Date</label>
+                    <InputDate id="pub" class="form-control"  @bind-Value="_book.PublisherDate" />
+                    <ValidationMessage For="@(()=>_book.PublisherDate)" />
+                </div>
+            </div>
+        </div>
+        <div class="d-flex gap-4">
+            <CustomBtn path="/admin-dashboard" cssClass="cusBtn cusBtn2 text-white" text="Back" />
+            <CustomBtn btnType="submit" cssClass="cusBtn cusBtn3 text-white" text="Create Book" />
+
+        </div>
+    </EditForm>
+</div>

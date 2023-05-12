@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "W6VZT1BD7ft7hYIvj1Op6Okz9wKAGy2CB7cNC6Eirw4=",
+  "Hash": "MCrEscfrSJlWAvLbv+rL/nvFNEnADYC23a/2SVq71lw=",
   "Source": "E-BOOK.UI",
   "BasePath": "_content/E-BOOK.UI",
   "Mode": "Default",
@@ -272,6 +272,23 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\bsahe\\source\\repos\\updateGroupb\\E-BOOK-LIBRARY(GROUPB)\\E-BOOK.UI\\wwwroot\\Images\\bghead.png",
+      "SourceId": "E-BOOK.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\bsahe\\source\\repos\\updateGroupb\\E-BOOK-LIBRARY(GROUPB)\\E-BOOK.UI\\wwwroot\\",
+      "BasePath": "_content/E-BOOK.UI",
+      "RelativePath": "Images/bghead.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\bghead.png"
+    },
+    {
       "Identity": "C:\\Users\\bsahe\\source\\repos\\updateGroupb\\E-BOOK-LIBRARY(GROUPB)\\E-BOOK.UI\\wwwroot\\Images\\lib.jpg",
       "SourceId": "E-BOOK.UI",
       "SourceType": "Discovered",
@@ -304,6 +321,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\noBook.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\bsahe\\source\\repos\\updateGroupb\\E-BOOK-LIBRARY(GROUPB)\\E-BOOK.UI\\wwwroot\\Images\\sh.jpg",
+      "SourceId": "E-BOOK.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\bsahe\\source\\repos\\updateGroupb\\E-BOOK-LIBRARY(GROUPB)\\E-BOOK.UI\\wwwroot\\",
+      "BasePath": "_content/E-BOOK.UI",
+      "RelativePath": "Images/sh.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\sh.jpg"
     }
   ]
 }

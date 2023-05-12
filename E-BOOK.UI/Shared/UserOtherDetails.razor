@@ -1,0 +1,32 @@
+﻿<div class="d-flex gap-2 flex-column customflex shadow-lg">
+    <div class="d-flex gap flex-column">
+        <p class="txt">EMAIL</p>
+        <p>@Email</p>
+    </div>
+    <div class="d-flex gap flex-column">
+        <p class="txt ">Mobile</p>
+        <p>@PhoneNumber</p>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string Email { get; set; }
+    [Parameter]
+    public string PhoneNumber { get; set; }
+}
+<style>
+    .customflex {
+        padding: 1rem;
+        align-items:flex-start;
+        width: 80%;
+        margin: 0 auto;
+       
+        border-radius: 2rem;
+        background: white;
+    }
+
+    .txt {
+        font-weight: 600
+    }
+</style>

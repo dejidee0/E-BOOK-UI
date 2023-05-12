@@ -19,6 +19,7 @@ namespace E_BOOK.API.Repository.Repository_Interface
         Task<AppUser> FindUserByEmailAsync(string email);
         Task<AppUser> FindUserByIdAsync(string id);
         Task<bool> UpdateUserInfo(string email, UpdateUserDTO user);
+        Task<PaginatedUser> GetAllUser(int pageNumber, int perPageSize);
         Task<bool> DeleteUserByEmail(string email);
 
 

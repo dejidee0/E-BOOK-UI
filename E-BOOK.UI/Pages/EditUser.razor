@@ -1,0 +1,50 @@
+﻿@page "/admin-dashboard/user/edit_user/{email}"
+@attribute [Authorize(Roles = "ADMIN")]
+<div class="shadow-sm p-5 rounded-3 cusgap">
+    <EditForm Model="@displayFindUserDTO" OnSubmit="HandleSubmited" class="d-flex flex-column cusgap">
+        <DataAnnotationsValidator/>
+    <div class="d-flex gap-4 flex-column">
+            <div class="form-row d-flex gap-2">
+                <div class="form-group col-6">
+                    <label for="firstname">First Name</label>
+                    <InputText id="firstname" class="form-control" placeholder="First Name" @bind-Value="displayFindUserDTO.FirstName" />
+                    <ValidationMessage For="@(()=>displayFindUserDTO.FirstName)" />
+                </div>
+                <div class="form-group col-6">
+                    <label for="lastname">Last Name</label>
+                    <InputText id="lastname" class="form-control" placeholder="Last Name" @bind-Value="displayFindUserDTO.LastName" />
+                    <ValidationMessage For="@(()=>displayFindUserDTO.LastName)" />
+                </div>
+            </div>
+            <div class="form-group col-12">
+                <label for="gender">Gender</label>
+                <InputSelect id="gender" @bind-Value="displayFindUserDTO.Gender" class="form-control">
+                    @foreach (var gender in Enum.GetValues(typeof(Gender)))
+                    {
+                        <option value=@gender>@gender</option>
+                    }
+                </InputSelect>
+                <ValidationMessage For="@(()=>displayFindUserDTO.Gender)" />
+            </div>
+            <div class="form-row d-flex gap-2">
+                <div class="form-group col-6">
+                    <label for="email">Email</label>
+                    <InputText id="email" class="form-control" placeholder="Email" @bind-Value="displayFindUserDTO.Email" />
+                    <ValidationMessage For="@(()=>displayFindUserDTO.Email)" />
+                </div>
+                <div class="form-group col-6">
+                    <label for="phone">Phone Number</label>
+                    <InputText id="phone" class="form-control" placeholder="Phone Number" @bind-Value="displayFindUserDTO.PhoneNumber" />
+                    <ValidationMessage For="@(()=>displayFindUserDTO.PhoneNumber)" />
+                </div>
+            </div>
+            
+    </div>
+        <div class="d-flex gap-4">
+            <CustomBtn path="/admin-dashboard" cssClass="cusBtn cusBtn2 text-white" text="Back" />
+            <CustomBtn btnType="submit" cssClass="cusBtn cusBtn3 text-white" text="Update" />
+            <CustomBtn cssClass="cusBtn cusBtn4 text-white" text="Delete" btnType="button" OnClick="@DeleteContact" />
+        </div>
+      
+</EditForm>
+</div>

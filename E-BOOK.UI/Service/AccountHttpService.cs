@@ -2,6 +2,7 @@
 using E_BOOK.UI.Service.Interface;
 using MODEL.DTO;
 using MODEL.Entity;
+using System.Net.Http.Headers;
 
 namespace E_BOOK.UI.Service
 {
@@ -63,7 +64,8 @@ namespace E_BOOK.UI.Service
             }
             throw new Exception(response);
         }
-        public async Task<bool> ResetPassword(ResetPassword reset) {
+        public async Task<bool> ResetPassword(ResetPassword reset)
+        {
 
             var result = await _httpClient.PostAsJsonAsync("api/account/reset-password", reset);
             var response = await result.Content.ReadAsStringAsync();
@@ -71,27 +73,81 @@ namespace E_BOOK.UI.Service
             {
                 return true;
             }
-            throw new Exception(response);  
+            throw new Exception(response);
         }
-        public async Task<string> UploadProfielPic(IFormFile file)
+        public async Task<string> UploadProfielPic(IFormFile file, string email)
         {
 
             using (var content = new MultipartFormDataContent())
             {
-                var email = await _localStorage.GetItemAsStringAsync("email");
+                
+                string token = await _localStorage.GetItemAsStringAsync("token");
                 using (var stream = file.OpenReadStream())
                 {
                     var streamContent = new StreamContent(stream);
                     content.Add(streamContent, "file", file.FileName);
-                    var rest = await _httpClient.PatchAsync($"users/upload?email={email}", content);
+                    _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token.Replace("\"", ""));
+                    var rest = await _httpClient.PatchAsync($"api/account/upload?email={email}", content);
                     var result = await rest.Content.ReadAsStringAsync();
                     if (rest.IsSuccessStatusCode)
                     {
-                        await _localStorage.RemoveItemAsync("email");
+                        return result;
                     }
-                    return result;
+                    throw new Exception("error while uploading image");
                 }
             }
+        }
+
+        public async Task<DisplayFindUserDTO> FindUserByAsyc(string email)
+        {
+            string token = await _localStorage.GetItemAsStringAsync("token");
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token.Replace("\"", ""));
+            var user = await _httpClient.GetFromJsonAsync<DisplayFindUserDTO>($"api/account/search/email?email={email}");
+            return user;
+        }
+
+        public async Task<PaginatedUser> GetAllUserAsyc(int pageNumber, int perPageSize)
+        {
+            string token = await _localStorage.GetItemAsStringAsync("token");
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token.Replace("\"", ""));
+            var user = await _httpClient.GetFromJsonAsync<PaginatedUser>($"api/account/all?pageNumber={pageNumber}&perPageSize={perPageSize}");
+            return user;
+        }
+
+        public async Task<bool> DeleteUserByEmailAsyc(string email)
+        {
+            string token = await _localStorage.GetItemAsStringAsync("token");
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token.Replace("\"", ""));
+            var user = await _httpClient.DeleteAsync($"api/account/delete/{email}");
+            if (user.IsSuccessStatusCode)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public async Task<bool> UpdateUserByEmailAsyc(string email, UpdateUserDTO updateUserDTO)
+        {
+            string token = await _localStorage.GetItemAsStringAsync("token");
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token.Replace("\"", ""));
+            var update = await _httpClient.PutAsJsonAsync($"api/account/update/{email}", updateUserDTO);
+            if (update.IsSuccessStatusCode)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public async Task<bool> UpdateUserRole(string email, string role)
+        {
+            string token = await _localStorage.GetItemAsStringAsync("token");
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token.Replace("\"", ""));
+            var updateRole = await _httpClient.PatchAsync($"api/account/update_role?email={email}&role={role}",null);
+            if (updateRole.IsSuccessStatusCode)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }

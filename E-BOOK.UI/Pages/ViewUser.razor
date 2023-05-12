@@ -1,0 +1,33 @@
+﻿@page "/admin-dashboard/user/{email}"
+@attribute [Authorize(Roles = "ADMIN")]
+@if (displayFindUserDTO == null)
+{
+    <div class="spinner"></div>
+}
+else
+{
+    <section class="flex-cus">
+        <div class="d-flex gap-4 flex-column align-items-center">
+            <img src="@displayFindUserDTO.ProfilePicture" alt="BookImg" />
+            <CustomBtn path=@($"/update_photo/{displayFindUserDTO.Email}") btnType="button" cssClass="cusBtn cusBtn5 text-white" text="Upload Image" />
+        </div>
+        <div class="d-flex flex-column shadow-sm p-5 rounded-3 cusgap">
+            <div class="d-flex flex-column g-lg-2">
+                <Details Title="First Name" Des="@displayFindUserDTO.FirstName.ToUpper()" />
+                <Details Title="Last Name" Des="@displayFindUserDTO.LastName.ToUpper()" />
+                <Details Title="Email" Des="@displayFindUserDTO.Email.ToUpper()" />
+                <Details Title="Phone" Des="@displayFindUserDTO.PhoneNumber.ToUpper()" />
+                <Details Title="Gender" Des="@(displayFindUserDTO.Gender == 0 ? "Male" :"Female")" />
+            </div>
+            <div class="d-flex gap-4">
+                <CustomBtn path="/admin-dashboard" cssClass="cusBtn cusBtn2 text-white" text="Back" />
+                <CustomBtn path=@($"/admin-dashboard/user/edit_user/{displayFindUserDTO.Email}") cssClass="cusBtn cusBtn3 text-white" text="Edit" />
+                
+                    <CustomBtn cssClass="cusBtn cusBtn4 text-white" text="Delete" btnType="button" OnClick="@DeleteContact" />
+                
+            </div>
+        </div>
+    </section>
+    <ConfirmDelete ConfirmationMessage=@($"Are you sure you want to delete {displayFindUserDTO.FirstName}?")
+                   ConfirmationTitle="Confirm Delete" ConfirmationChanged="ConfirmDelete_CLick" @ref="DeleteConfirmation"></ConfirmDelete>
+}

@@ -28,7 +28,8 @@ namespace E_BOOK.API.Service
     {
         new Claim(ClaimTypes.Email, Email),
         new Claim(JwtRegisteredClaimNames.Jti, user.Id),
-        new Claim(ClaimTypes.Name, name)
+        new Claim(ClaimTypes.Name, name),
+        new Claim(ClaimTypes.UserData, user.Id)
     };
             foreach (var role in roles)
             {

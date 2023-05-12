@@ -1,0 +1,38 @@
+﻿.cusImg {
+    max-width: 40px;
+}
+
+.roundCus {
+    border-radius: 0px 12px 12px 12px;
+    box-shadow: 0px 5px 15px -2px rgba(0,0,0,0.36);
+    -webkit-box-shadow: 0px 5px 15px -2px rgba(0,0,0,0.36);
+    -moz-box-shadow: 0px 5px 15px -2px rgba(0,0,0,0.36);
+}
+
+.headMb {
+    margin-bottom: 40px;
+}
+
+.mbhead {
+    margin-bottom: 20px;
+}
+
+.pagiSample {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.cusBtn {
+    border: none;
+    outline: none;
+    padding: 5px 40px;
+    border-radius: 12px;
+}
+
+.cusBtn2 {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    box-shadow: 0px 5px 15px -2px rgba(101,101,235,0.36);
+    -webkit-box-shadow: 0px 5px 15px -2px rgba(101,101,235,0.36);
+    -moz-box-shadow: 0px 5px 15px -2px rgba(101,101,235,0.36);
+}

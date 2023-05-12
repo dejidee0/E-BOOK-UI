@@ -1,39 +1,20 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">E-BOOK.UI</a>
-        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+﻿<AuthorizeView>
+    <Authorized>
+@if (displayFindUserDTO == null){
+    <div class="spinner"></div>
+}else{
+    <div class="shadow-sm h-100">
+        <div class="d-flex flex-column gap-4 align-items-center">
+            <UserCard imgUrl="@displayFindUserDTO.ProfilePicture"
+                  userName=@(displayFindUserDTO.FirstName.ToUpper() +" " + displayFindUserDTO.LastName.ToLower()) />
+            <UserOtherDetails Email=@displayFindUserDTO.Email
+                          PhoneNumber=@displayFindUserDTO.PhoneNumber />
+            <CustomBtn btnType="button" cssClass="cusBtn cusBtn5 text-white" path="/admin-dashboard" text="Manage User" />
+            <CustomBtn btnType="button" cssClass="cusBtn cusBtn3 text-white" path="/admin-dashboard/book" text="Manage Book" />
+                    <CustomBtn btnType="button" cssClass="cusBtn cusBtn2 text-white" path=@($"/admin-dashboard/user/edit_user/{displayFindUserDTO.Email}") text="Update User Info" />
+        </div>
     </div>
-</div>
 
-<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
-    <nav class="flex-column">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="oi oi-home" aria-hidden="true"></span> Home
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="oi oi-plus" aria-hidden="true"></span> Counter
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="fetchdata">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
-            </NavLink>
-        </div>
-    </nav>
-</div>
-
-@code {
-    private bool collapseNavMenu = true;
-
-    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
-
-    private void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
-    }
 }
+    </Authorized>
+</AuthorizeView>

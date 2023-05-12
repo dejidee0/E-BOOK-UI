@@ -45,14 +45,14 @@ namespace MODEL.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "e570095b-f80b-473e-bf2c-2b459334f0ef",
+                            Id = "8114c7a7-c452-4e9a-952b-fd8e63b34a2d",
                             ConcurrencyStamp = "1",
                             Name = "ADMIN",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "8ca71b24-145a-484a-b685-15fb183aeed7",
+                            Id = "378a0ba9-46e8-4538-8afd-c9d6fa92bda0",
                             ConcurrencyStamp = "2",
                             Name = "USER",
                             NormalizedName = "USER"
@@ -279,6 +279,9 @@ namespace MODEL.Migrations
                     b.Property<DateTime>("PublisherDate")
                         .HasColumnType("TEXT");
 
+                    b.Property<double>("Rating")
+                        .HasColumnType("REAL");
+
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("TEXT");
@@ -296,7 +299,7 @@ namespace MODEL.Migrations
                         new
                         {
                             Id = 1,
-                            AddedToLib = new DateTime(2023, 4, 30, 16, 19, 28, 47, DateTimeKind.Local).AddTicks(2669),
+                            AddedToLib = new DateTime(2023, 5, 8, 21, 5, 5, 515, DateTimeKind.Local).AddTicks(5299),
                             AppUserId = "9408eccf-0b8b-4d88-b951-e10f83198e18",
                             Author = "Paulo Coelho",
                             BookImg = "",
@@ -305,13 +308,14 @@ namespace MODEL.Migrations
                             NoPage = 208,
                             Publisher = "HarperOne",
                             PublisherDate = new DateTime(1988, 4, 25, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Rating = 0.0,
                             Title = "The Alchemist",
                             ViewBook = 0
                         },
                         new
                         {
                             Id = 2,
-                            AddedToLib = new DateTime(2023, 4, 30, 16, 19, 28, 47, DateTimeKind.Local).AddTicks(2691),
+                            AddedToLib = new DateTime(2023, 5, 8, 21, 5, 5, 515, DateTimeKind.Local).AddTicks(5334),
                             AppUserId = "9408eccf-0b8b-4d88-b951-e10f83198e18",
                             Author = "Harper Lee",
                             BookImg = "",
@@ -320,13 +324,14 @@ namespace MODEL.Migrations
                             NoPage = 336,
                             Publisher = "Grand Central Publishing",
                             PublisherDate = new DateTime(1960, 7, 11, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Rating = 0.0,
                             Title = "To Kill a Mockingbird",
                             ViewBook = 0
                         },
                         new
                         {
                             Id = 3,
-                            AddedToLib = new DateTime(2023, 4, 30, 16, 19, 28, 47, DateTimeKind.Local).AddTicks(2695),
+                            AddedToLib = new DateTime(2023, 5, 8, 21, 5, 5, 515, DateTimeKind.Local).AddTicks(5338),
                             AppUserId = "9408eccf-0b8b-4d88-b951-e10f83198e18",
                             Author = "George Orwell",
                             BookImg = "",
@@ -335,6 +340,7 @@ namespace MODEL.Migrations
                             NoPage = 328,
                             Publisher = "Signet Classics",
                             PublisherDate = new DateTime(1949, 6, 8, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Rating = 0.0,
                             Title = "1984",
                             ViewBook = 0
                         });
@@ -382,7 +388,7 @@ namespace MODEL.Migrations
                             AppUserId = "9408eccf-0b8b-4d88-b951-e10f83198e18",
                             BookId = 3,
                             Comment = "The book was lengthy but I loved it",
-                            DateCreated = new DateTime(2023, 4, 30, 16, 19, 28, 47, DateTimeKind.Local).AddTicks(2876),
+                            DateCreated = new DateTime(2023, 5, 8, 21, 5, 5, 515, DateTimeKind.Local).AddTicks(5385),
                             Rating = 4,
                             Title = "Golden boy"
                         },
@@ -392,7 +398,7 @@ namespace MODEL.Migrations
                             AppUserId = "9408eccf-0b8b-4d88-b951-e10f83198e18",
                             BookId = 2,
                             Comment = "The books were lengthy but I loved it",
-                            DateCreated = new DateTime(2023, 4, 30, 16, 19, 28, 47, DateTimeKind.Local).AddTicks(2881),
+                            DateCreated = new DateTime(2023, 5, 8, 21, 5, 5, 515, DateTimeKind.Local).AddTicks(5389),
                             Rating = 3,
                             Title = "Golden girl"
                         },
@@ -402,7 +408,7 @@ namespace MODEL.Migrations
                             AppUserId = "9408eccf-0b8b-4d88-b951-e10f83198e18",
                             BookId = 2,
                             Comment = "The book was lengthy but I loved it",
-                            DateCreated = new DateTime(2023, 4, 30, 16, 19, 28, 47, DateTimeKind.Local).AddTicks(2885),
+                            DateCreated = new DateTime(2023, 5, 8, 21, 5, 5, 515, DateTimeKind.Local).AddTicks(5391),
                             Rating = 4,
                             Title = "Golden woman"
                         });

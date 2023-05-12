@@ -14,8 +14,9 @@ builder.Services.AddServerSideBlazor();
 builder.Services.AddHttpClient<IAccountHttpService, AccountHttpService>(client => client.BaseAddress = new Uri("https://localhost:7003/"));
 builder.Services.AddHttpClient<IBookHttpService, BookHttpService>(client => client.BaseAddress = new Uri("https://localhost:7003/"));
 builder.Services.AddHttpClient<IReviewHttpService, ReviewHttpService>(client => client.BaseAddress = new Uri("https://localhost:7003/"));
-builder.Services.AddSingleton<WeatherForecastService>();
+builder.Services.AddHttpContextAccessor();
 builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthStateProvider>();
+
 builder.Services.AddAuthenticationCore();
 builder.Services.AddBlazoredLocalStorage();
 var app = builder.Build();

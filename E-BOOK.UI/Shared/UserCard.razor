@@ -1,0 +1,38 @@
+﻿<div class="customflex2 bg-white shadow">
+    <div>
+        <img src="@imgUrl" class="rounded-circle shadow customImg" alt="SignInUserAvatar" />
+    </div>
+    <p>@userName</p>
+</div>
+
+
+@code {
+    [Parameter]
+    public string imgUrl { get; set; }
+    [Parameter]
+    public string userName { get; set; }
+}
+<style>
+    .customflex2 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 80%;
+        padding-top: 2rem;
+        margin: 0 auto;
+        margin-top: 7rem;
+        border-radius: 2rem;
+        padding-bottom:1rem;
+    }
+
+    .customImg {
+        max-width: 100px;
+        width: 100%;
+        position: absolute;
+        top: -90px;
+        right: 45px;
+    }
+</style>

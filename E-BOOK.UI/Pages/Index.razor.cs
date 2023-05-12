@@ -49,7 +49,17 @@ namespace E_BOOK.UI.Pages
         }
         public async Task HandleNext1()
         {
+            if(_Book3.TotalPages >= CurrentPage) { 
+
             _Book3 = await _bookHttpService.RecentBooks(CurrentPage++, PageSize);
+            }
+        }
+        public async Task HandleNext2()
+        {
+            if (_Book4.TotalPages >= CurrentPage)
+            {
+                _Book4 = await _bookHttpService.RecentBooks(CurrentPage++, PageSize);
+            }
         }
         public async Task HandlePrev1()
         {
@@ -59,6 +69,15 @@ namespace E_BOOK.UI.Pages
             }
             CurrentPage--;
             _Book3 = await _bookHttpService.RecentBooks(CurrentPage, PageSize);
+        }
+        public async Task HandlePrev2()
+        {
+            if (CurrentPage < 1)
+            {
+                CurrentPage = 1;
+            }
+            CurrentPage--;
+            _Book4 = await _bookHttpService.RecentBooks(CurrentPage, PageSize);
         }
         protected async Task LoadPage4()
         {

@@ -15,6 +15,7 @@
         public string Publisher { get; set; }
         public DateTime PublisherDate { get; set; }
         public List<Review> Reviews { get; set; }
+        public double Rating { get; set; }
         public int ViewBook { get; set; }
 
     }

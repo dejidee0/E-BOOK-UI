@@ -37,7 +37,6 @@ namespace E_BOOK.API.Controllers
                 if (result != null)
                 {
                     var token = await _userManager.GenerateEmailConfirmationTokenAsync(result);
-                    //var callbackUrl = Url.Action("ConfirmEmail", "Account", new { email = result.Email, token = token }, protocol: HttpContext.Request.Scheme);
                     var callbackUrl2 = $"{HttpContext.Request.Scheme}://localhost:7226/confirm_email?email={result.Email}&token={token}";
                     var message = new Message(new string[] { result.Email }, "Confirmation email Link", $"Please confirm your account by clicking this link: <a href='{callbackUrl2}'>link</a>");
                     _emailService.SendEmail(message);
@@ -121,15 +120,15 @@ namespace E_BOOK.API.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, "Error, email not Varied");
             }
         }
-        [Authorize (AuthenticationSchemes ="Bearer", Roles ="ADMIN")]
+        [Authorize(AuthenticationSchemes = "Bearer", Roles = "ADMIN")]
         [HttpGet("search/email")]
         public async Task<IActionResult> FindUserbyEmail(string email)
         {
             try
             {
-               
+
                 var user = await _accountRepository.FindUserByEmailAsync(email);
-                if(user != null)
+                if (user != null)
                 {
                     var result = new DisplayFindUserDTO();
                     result.FirstName = user.FirstName;
@@ -148,6 +147,25 @@ namespace E_BOOK.API.Controllers
             {
                 _logger.LogError(ex, "An error occurred while processing finding user by email request");
                 return StatusCode(StatusCodes.Status500InternalServerError, "Error finding user by email from the database");
+            }
+        }
+        [HttpGet("all")]
+        [Authorize(AuthenticationSchemes = "Bearer", Roles = "ADMIN")]
+        public async Task<IActionResult> GetallUser(int pageNumber, int perPageSize)
+        {
+            try
+            {
+                var alluser = await _accountRepository.GetAllUser(pageNumber, perPageSize);
+                if (alluser != null)
+                {
+                    return Ok(alluser);
+                }
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error getting all user from the database");
+
             }
         }
         [Authorize(AuthenticationSchemes = "Bearer", Roles = "ADMIN")]
@@ -179,8 +197,8 @@ namespace E_BOOK.API.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, "Error finding user by id from the database");
             }
         }
-        [Authorize(AuthenticationSchemes = "Bearer", Roles = "ADMIN")]
-        [HttpPatch("UpdateRole")]
+        //[Authorize(AuthenticationSchemes = "Bearer", Roles = "ADMIN")]
+        [HttpPatch("update_role")]
         public async Task<IActionResult> UpdateRoleAsync(string email, string role)
         {
             try
@@ -199,7 +217,7 @@ namespace E_BOOK.API.Controllers
             }
         }
         [Authorize(AuthenticationSchemes = "Bearer")]
-        [HttpPatch("update/{email}")]
+        [HttpPut("update/{email}")]
         public async Task<IActionResult> UpdateUser(string email, UpdateUserDTO updateDetails)
         {
             try
@@ -250,13 +268,14 @@ namespace E_BOOK.API.Controllers
                     return NoContent();
                 }
                 return BadRequest("User not deleted successfully");
-            } catch (Exception ex)
+            }
+            catch (Exception ex)
             {
 
                 _logger.LogError(ex, "An error occurred while processing delete for user request");
                 return StatusCode(StatusCodes.Status500InternalServerError, "Error deleting user from the database");
             }
         }
-        
+
     }
 }

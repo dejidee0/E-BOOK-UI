@@ -44,3 +44,8 @@ C:\Users\bsahe\source\repos\updateGroupb\E-BOOK-LIBRARY(GROUPB)\E-BOOK.UI\bin\De
 C:\Users\bsahe\source\repos\updateGroupb\E-BOOK-LIBRARY(GROUPB)\E-BOOK.UI\obj\Debug\net6.0\E-BOOK.UI.csproj.CopyComplete
 C:\Users\bsahe\source\repos\updateGroupb\E-BOOK-LIBRARY(GROUPB)\E-BOOK.UI\obj\Debug\net6.0\scopedcss\Shared\CustomBtn.razor.rz.scp.css
 C:\Users\bsahe\source\repos\updateGroupb\E-BOOK-LIBRARY(GROUPB)\E-BOOK.UI\obj\Debug\net6.0\scopedcss\Pages\SingleBook.razor.rz.scp.css
+C:\Users\bsahe\source\repos\updateGroupb\E-BOOK-LIBRARY(GROUPB)\E-BOOK.UI\obj\Debug\net6.0\scopedcss\Pages\Index.razor.rz.scp.css
+C:\Users\bsahe\source\repos\updateGroupb\E-BOOK-LIBRARY(GROUPB)\E-BOOK.UI\obj\Debug\net6.0\scopedcss\Pages\Dashboard.razor.rz.scp.css
+C:\Users\bsahe\source\repos\updateGroupb\E-BOOK-LIBRARY(GROUPB)\E-BOOK.UI\obj\Debug\net6.0\scopedcss\Pages\ViewUser.razor.rz.scp.css
+C:\Users\bsahe\source\repos\updateGroupb\E-BOOK-LIBRARY(GROUPB)\E-BOOK.UI\obj\Debug\net6.0\scopedcss\Pages\DashboardBook.razor.rz.scp.css
+C:\Users\bsahe\source\repos\updateGroupb\E-BOOK-LIBRARY(GROUPB)\E-BOOK.UI\obj\Debug\net6.0\scopedcss\Pages\ViewBook.razor.rz.scp.css

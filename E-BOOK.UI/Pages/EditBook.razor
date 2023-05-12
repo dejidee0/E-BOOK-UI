@@ -1,0 +1,55 @@
+﻿@page "/admin-dashboard/user/edit_book/{Id}"
+@attribute [Authorize(Roles = "ADMIN")]
+<div class="shadow-sm p-5 rounded-3 cusgap">
+    <EditForm Model="@_book" OnSubmit="HandleSubmited" class="d-flex flex-column cusgap">
+        <div class="d-flex gap-4 flex-column">
+            <div class="form-row d-flex gap-2">
+                <div class="form-group col-6">
+                    <label for="Title">Title</label>
+                    <InputText id="Title" class="form-control" placeholder="Book Title" @bind-Value="_book.Title" />
+                    <ValidationMessage For="@(()=>_book.Title)" />
+                </div>
+                <div class="form-group col-6">
+                    <label for="author">Author</label>
+                    <InputText id="author" class="form-control" placeholder="Last Name" @bind-Value="_book.Author" />
+                    <ValidationMessage For="@(()=>_book.Author)" />
+                </div>
+            </div>
+            <div class="form-group col-12">
+                <label for="email">ISBN</label>
+                <InputText id="email" class="form-control" placeholder="No of Page" @bind-Value=@(_book.ISBN) />
+                <ValidationMessage For="@(()=>_book.ISBN)" />
+            </div>
+            <div class="form-row d-flex gap-2">
+                <div class="form-group col-6">
+                    <label for="pub">Publisher</label>
+                    <InputText id="pub" @bind-Value="_book.Publisher" class="form-control" />
+                    <ValidationMessage For="@(()=>_book.Publisher)" />
+                </div>
+                <div class="form-group col-6">
+                    <label for="dat">Published Date</label>
+                    <InputDate id="dat" class="form-control" @bind-Value="_book.PublisherDate" />
+                    <ValidationMessage For="@(()=>_book.PublisherDate)" />
+                </div>
+            </div>
+            <div class="form-row d-flex gap-2">
+                <div class="form-group col-6">
+                    <label for="email">No of Page</label>
+                    <InputNumber id="email" class="form-control" placeholder="No of Page" @bind-Value=@(_book.NoPage) />
+                    <ValidationMessage For="@(()=>_book.NoPage)" />
+                </div>
+                <div class="form-group col-6">
+                    <label for="dat">Date Added to library</label>
+                    <InputDate id="dat" class="form-control" @bind-Value="_book.AddedToLib" />
+                    <ValidationMessage For="@(()=>_book.AddedToLib)" />
+                </div>
+            </div>
+        </div>
+        <div class="d-flex gap-4">
+            <CustomBtn path="/admin-dashboard" cssClass="cusBtn cusBtn2 text-white" text="Back" />
+            <CustomBtn btnType="submit" cssClass="cusBtn cusBtn3 text-white" text="Update" />
+            <CustomBtn cssClass="cusBtn cusBtn4 text-white" text="Delete" btnType="button" OnClick="@DeleteContact" />
+        </div>
+
+    </EditForm>
+</div>

@@ -10,7 +10,7 @@ namespace MODEL.Entity
     public class Review
     {
         public int Id { get; set; }
-        [JsonIgnore]
+        //[JsonIgnore]
         public Book Book { get; set; }
         public int BookId { get; set; }
         public string Title { get; set; }

@@ -5,12 +5,20 @@
       "PackagePath": "staticwebassets\\E-BOOK.UI.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\bsahe\\source\\repos\\updateGroupb\\E-BOOK-LIBRARY(GROUPB)\\E-BOOK.UI\\wwwroot\\Images\\bghead.png",
+      "PackagePath": "staticwebassets\\Images\\bghead.png"
+    },
+    {
       "Id": "C:\\Users\\bsahe\\source\\repos\\updateGroupb\\E-BOOK-LIBRARY(GROUPB)\\E-BOOK.UI\\wwwroot\\Images\\lib.jpg",
       "PackagePath": "staticwebassets\\Images\\lib.jpg"
     },
     {
       "Id": "C:\\Users\\bsahe\\source\\repos\\updateGroupb\\E-BOOK-LIBRARY(GROUPB)\\E-BOOK.UI\\wwwroot\\Images\\noBook.jpg",
       "PackagePath": "staticwebassets\\Images\\noBook.jpg"
+    },
+    {
+      "Id": "C:\\Users\\bsahe\\source\\repos\\updateGroupb\\E-BOOK-LIBRARY(GROUPB)\\E-BOOK.UI\\wwwroot\\Images\\sh.jpg",
+      "PackagePath": "staticwebassets\\Images\\sh.jpg"
     },
     {
       "Id": "C:\\Users\\bsahe\\source\\repos\\updateGroupb\\E-BOOK-LIBRARY(GROUPB)\\E-BOOK.UI\\wwwroot\\css\\bootstrap\\bootstrap.min.css",

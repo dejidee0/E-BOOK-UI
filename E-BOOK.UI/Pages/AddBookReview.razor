@@ -1,0 +1,34 @@
+﻿@page "/bookreview/{userid}/{bookid}"
+@layout LandingLayout
+@attribute [Authorize(Roles ="USER")]
+<div class="customWidth">
+    <h1>Add Review</h1>
+    <EditForm Model="addReview" OnSubmit="HandleReview" class="w-50">
+        <div class="shadow p-4 d-flex flex-column gap-4">
+            <div class="d-flex gap-2 flex-column gap-2">
+                <label for="username">Title</label>
+                <InputText id="username" @bind-Value="addReview.Title" />
+            </div>
+            <div class="d-flex gap-2 flex-column">
+                <label for="pass">Comment</label>
+                <InputText id="pass" @bind-Value="addReview.Comment" />
+            </div>
+            <div class="d-flex gap-2 flex-column">
+                <label for="pass">Rating</label>
+                <InputNumber id="pass" @bind-Value="addReview.Rating" />
+            </div>
+            <CustomBtn btnType="submit" cssClass="cusBtn cusBtn5 text-white" text="Submit Review" />
+           
+        </div>
+    </EditForm>
+</div>
+<style>
+    .customWidth{
+        padding-block:4rem;
+        display:flex;
+        flex-direction:column;
+        gap:2rem;
+        justify-content:center;
+        align-items:center;
+    }
+</style>

@@ -1,0 +1,10 @@
+﻿.flex-cus {
+    display: flex;
+    align-items: center;
+    gap: 24px
+}
+
+    .flex-cus img {
+        max-width: 400px;
+        width: 100%;
+    }

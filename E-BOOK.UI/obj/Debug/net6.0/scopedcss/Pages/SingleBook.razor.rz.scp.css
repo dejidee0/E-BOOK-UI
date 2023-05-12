@@ -10,7 +10,12 @@
     height: 200px;
     width: 40%;
 }
-
+.padded[b-6ijoeokxk5] {
+    padding-block: 4rem;
+}
 .cusgap[b-6ijoeokxk5] {
     gap: 0.5px;
+}
+.cusgap[b-6ijoeokxk5] {
+    gap: 0.5rem;
 }

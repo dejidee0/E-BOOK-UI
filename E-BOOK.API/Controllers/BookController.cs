@@ -2,6 +2,8 @@
 using E_BOOK.API.Service.Service_Interface;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using MODEL;
 using MODEL.DTO;
 using MODEL.Entity;
 
@@ -15,13 +17,32 @@ namespace E_BOOK.API.Controllers
         private readonly IE_BookRepository _BookRepository;
         private readonly ICloudinaryService _cloudinaryService;
         private readonly ILogger<BookController> _logger;
+        private readonly E_BookDbContext bookdb;
 
-        public BookController(IE_BookRepository e_BookRepository, ICloudinaryService cloudinaryService, ILogger<BookController> logger)
+        public BookController(IE_BookRepository e_BookRepository, ICloudinaryService cloudinaryService, ILogger<BookController> logger, E_BookDbContext bookdb )
         {
             _BookRepository = e_BookRepository;
             _cloudinaryService = cloudinaryService;
             _logger = logger;
+            this.bookdb = bookdb;
         }
+        [AllowAnonymous]
+        [HttpGet("test")]
+        public async Task<ActionResult> SampleTest() 
+        {
+            var books = await bookdb.Books.Include(r=>r.Reviews).Where(x=> x.Reviews.Any()).ToListAsync();
+            foreach (var book in books)
+            {
+                
+                var averageRating = book.Reviews.Sum(x => x.Rating)  / book.Reviews.Count();
+                book.Rating = averageRating;
+                bookdb.Update(book);
+                
+            }
+            await bookdb.SaveChangesAsync();
+            return Ok();
+        }
+
         //IZUCHUKWU
         [AllowAnonymous]
         [HttpGet]
@@ -70,30 +91,30 @@ namespace E_BOOK.API.Controllers
                 return BadRequest("Error getting book from database");
             }
         }
-        //IZUCHUKWU
+        
         [Authorize(Roles = "ADMIN")]
         [HttpGet("search/title")]
-        public async Task<IEnumerable<SearchBookDTO>> SearchTitle_IZU(string title)
+        public async Task<ActionResult< IEnumerable<SearchBookDTO>>> SearchTitle_IZU(string title)
         {
             var result = await _BookRepository.SearchTitle_IZU(title);
 
             if (result.Any())
             {
-                return result;
+                return Ok(result);
             }
-            return null;
+            return NotFound("Book with the title not found");
         }
         [Authorize(Roles = "ADMIN")]
         [HttpGet("search/author")]
-        public async Task<IEnumerable<SearchBookDTO>> SearchAuthor_IZU(string author)
+        public async Task<ActionResult<IEnumerable<SearchBookDTO>>> SearchAuthor_IZU(string author)
         {
             var result = await _BookRepository.SearchAuthor_IZU(author);
 
             if (result.Any())
             {
-                return result;
+                return Ok(result);
             }
-            return null;
+            return NotFound("Book with the author not found");
         }
         [AllowAnonymous]
         [HttpGet("popular")]
@@ -143,7 +164,6 @@ namespace E_BOOK.API.Controllers
                 return BadRequest("Error retrieving Recentbooks from database");
             }
         }
-        //IZUCHUKWU
         [Authorize(Roles = "ADMIN")]
         [HttpPost("add")]
         public async Task<IActionResult> CreateBook([FromBody] CreateBookDTO createBookDTO)

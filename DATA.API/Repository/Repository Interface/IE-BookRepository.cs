@@ -13,13 +13,8 @@ namespace E_BOOK.API.Repository.Repository_Interface
         IEnumerable<Book> PopularBook();
         IEnumerable<Book> RecentBook();
         public  Task<bool> CreateBook_IZU(CreateBookDTO createBookDTO);
-
         public Task<Book> UpdateBook_IZU(int bookId, UpdateBookDTO updateBookDTO);
-
         public  Task<IEnumerable<SearchBookDTO>> SearchAuthor_IZU(string author);
-
         public Task<IEnumerable<SearchBookDTO>> SearchTitle_IZU(string title);
-
-
     }
 }

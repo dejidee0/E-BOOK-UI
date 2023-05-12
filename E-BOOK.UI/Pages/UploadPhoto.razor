@@ -1,0 +1,12 @@
+﻿@page "/update_photo/{email}"
+@attribute [Authorize]
+<h1>Upload Image</h1>
+<div class="d-flex flex-column shadow-sm p-5 rounded-3 cusgap">
+    <div class="d-flex flex-column gap-4 align-items-center">
+        <h2>Please select an image to upload</h2>
+        <InputFile OnChange="@OnInputFileChange" class="cusBtn cusBtnGreen text-white" />
+        <div>
+            <button @onclick="UploadImage" class="cusBtn cusBtn2 text-white">Upload User Image</button>
+        </div>
+    </div>
+</div>

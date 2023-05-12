@@ -11,13 +11,11 @@ namespace E_BOOK.API.Repository
     public class ReviewRepository : IReviewRepository
     {
         private readonly E_BookDbContext _bookDbContext;
-
         private readonly UserManager<AppUser> _userManager;
 
         public ReviewRepository(E_BookDbContext bookDbContext, UserManager<AppUser> userManager)
         {
             _bookDbContext = bookDbContext;
-
             _userManager = userManager;
         }
 
@@ -36,8 +34,6 @@ namespace E_BOOK.API.Repository
             }
             ReviewResponse.Data = result;
             return ReviewResponse;
-
-
         }
         public async Task<bool> AddReviewAsync(AddReview model)
         {
@@ -46,12 +42,15 @@ namespace E_BOOK.API.Repository
             {
                 throw new Exception("The user to add review to book not available");
             }
-            var checkBook = await _bookDbContext.Books.FindAsync(model.BookId);
+            var checkBook = await _bookDbContext.Books.Include(x=>x.Reviews).FirstOrDefaultAsync(x=>x.Id == model.BookId);
+          
             if (checkBook == null)
             {
                 throw new Exception("The book to add review is not available");
             }
-
+            var averageRating = (checkBook.Reviews.Sum(x => x.Rating) + model.Rating) / (checkBook.Reviews.Count() + 1);
+            checkBook.Rating = averageRating;
+            _bookDbContext.Update(checkBook);
             var review = new Review()
             {
                 BookId = model.BookId,
